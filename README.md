@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Project Munchkin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---------------------------------
 
-## Available Scripts
+## We are deployed on _____
 
-In the project directory, you can run:
+[project url here]
 
-### `npm start`
+---------------------------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Web Application
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This was our attempt to program an online version of Munchkin, the classic tabletop game by Steve Jackson Games.
 
-### `npm test`
+---------------------------------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tools Used
 
-### `npm run build`
+Microsoft Visual Studio
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Redux
+- Amazon Web Services
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---------------------------------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Clone this repository to your local machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+git clone https://github.com/meanJerkTime/401-final-react.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once downloaded, you can either use VS Code to build the web application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+cd YourRepo/YourProject
+`npm i`
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Install all dependencies needed for the project.
 
-## Learn More
+```
+Database
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* explain how to use the database *
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+cd YourRepo/YourProject
+npm start
+```
 
-### Code Splitting
+---------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+***[Provide some images of your app that shows how it can be used with brief description as title]***
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Overview of Recent Posts
 
-### Making a Progressive Web App
+![Overview of Recent Posts](https://via.placeholder.com/500x250)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Creating a Post
 
-### Advanced Configuration
+![Post Creation](https://via.placeholder.com/500x250)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Enriching a Post
 
-### Deployment
+![Enriching Post](https://via.placeholder.com/500x250)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Viewing Post Details
 
-### `npm run build` fails to minify
+![Details of Post](https://via.placeholder.com/500x250)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---------------------------
+
+## Data Flow (Frontend, Backend, REST API)
+
+***[Add a clean and clear explanation of what the data flow is. Walk me through it.]***
+![Data Flow Diagram](/assets/img/Flowchart.png)
+
+---------------------------
+
+## Data Model
+
+### Overall Project Schema
+
+***[Add a description of your DB schema. Explain the relationships to me.]***
+![Database Schema](/assets/img/ERD.png)
+
+---------------------------
+
+## Authors
+
+- Diane Stephani
+- Joe Pennock
+- Edgar Romero
+- Brendon Hampton
+- Kory Jackson
+- Chris Bortel
+- Peng Chen
+
+------------------------------

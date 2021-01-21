@@ -1,23 +1,17 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import './cardsInHand.scss';
-import {OverlayTrigger, Tooltip} from 'react-bootstrap';
-
-const renderTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-    </Tooltip>
-  );
 
 export default function CardsInHand() {
+
   return (
     <>
       <div className="cards-in-hand">
             <ul id='cards'>
             {
-            cards.map(card => <OverlayTrigger placement="top" delay={{show:250, hide:400}} overlay={renderTooltip}><button><Card style={{ width: '100px' }}>
-            <Card.Img variant="top" src={card.image} />
-            </Card></button></OverlayTrigger>
+                cards.map(card => <button data-tip data-for="registerTip"><Card className="zoom" style={{ width: '100px' }}>
+                    <Card.Img variant="top" src={card.image} />
+                </Card></button>
             )
             }
           </ul> 

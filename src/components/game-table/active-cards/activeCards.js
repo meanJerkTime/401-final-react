@@ -3,7 +3,7 @@ import './activeCards.scss';
 
 
 
-function ActiveCards() {
+export default function ActiveCards() {
   return (
     <>
       <div id="">
@@ -12,6 +12,4 @@ function ActiveCards() {
     </>
   );
 }
-
-export default ActiveCards;
 

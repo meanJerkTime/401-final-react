@@ -6,7 +6,7 @@ import './activeCards.scss';
 function ActiveCards() {
   return (
     <>
-      <div id="Container">
+      <div id="">
           <h1>Active Cards</h1>
       </div>
     </>

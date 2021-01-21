@@ -6,7 +6,7 @@ import './playerProgress.scss';
 function PlayerProgress() {
   return (
     <>
-      <div id="Container">
+      <div id="">
           <h1>Player Progress</h1>
       </div>
     </>

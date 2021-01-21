@@ -1,0 +1,23 @@
+#Combat {
+    color:red;
+    border:1px solid red;
+}
+
+.combat-area-grid {
+    height:500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "monster"
+      "cards";
+
+      .monster {
+          border-bottom: 1px dashed; 
+          color:red;
+      }
+      .cards {
+          color:blue;
+      }
+  }

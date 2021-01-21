@@ -1,11 +1,13 @@
-import GameBoard from './components/game-board/gameBoard.js';
-import './components/game-board/gameBoard.scss';
-
+import GameTable from './components/game-table/gameTable.js';
+import Navbar from './components/header/navbar/navbar.js';
+import Footer from './components/footer/footer.js';
 
 function App() {
   return (
     <>
-      <GameBoard />
+      <Navbar />
+      <GameTable />
+      <Footer />
     </>
   );
 }

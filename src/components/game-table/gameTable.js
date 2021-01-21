@@ -9,7 +9,10 @@ export default function GamePage() {
   return (
     <>
       <div id="GameTable">
-        <GameBoard />
+        
+        <div class="grid-container">
+          <GameBoard />
+        </div>
 
       </div>
       

@@ -1,6 +1,17 @@
 
-#GameTable{
-  color: red;
-  border: 2px solid black;
-  height: 750px;
+// #GameTable{
+//   color: red;
+// }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.7fr 0.6fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
 }

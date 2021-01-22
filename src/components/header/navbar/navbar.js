@@ -26,16 +26,16 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            Home
+          <NavLink to="/">Home</NavLink>
           </Typography>
           <Typography variant="h6" className={classes.title}>
-            Rules
+            <NavLink to='/rules'>Rules</NavLink>
           </Typography>
           <Typography variant="h6" className={classes.title}>
             <NavLink to="/about">About</NavLink>
             
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button id='signUp' color="inherit">Signup</Button>
         </Toolbar>
       </AppBar>
     </div>

@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from '../header/navbar/navbar.js';
 import Footer from '../footer/footer.js';
 import './playerHub.scss';
-// import Rooms from './rooms/rooms.js';
+import Rooms from './rooms/rooms.js';
+import CreateRoom from './create-a-room/createRoom.js';
 
 export default function Landing() {
 
@@ -10,8 +11,8 @@ export default function Landing() {
     <>
         <Navbar/>
         <div className='playerHub'>
-            <h1 className='top'>Rooms</h1>
-            <h1 className='bottom'>Create a room</h1>
+            <Rooms className='top'/>
+            <CreateRoom className='bottom'/>
         </div>
       <Footer/>
     </>

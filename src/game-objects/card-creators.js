@@ -11,6 +11,8 @@ class Card {
 
 };
 
+/////// maybe add an "active" category so we can see which one is selected?
+
 // Base class for all cards that are items, equipment, spells, go up a levels etc
 // There will be no 'new Items'
 class Item extends Card {

@@ -1,17 +1,16 @@
 import React from 'react';
 import Navbar from '../header/navbar/navbar.js';
 import Footer from '../footer/footer.js';
-import './landingPage.scss';
-import {NavLink} from 'react-router-dom';
+import './playerHub.scss';
 
 export default function Landing() {
 
   return (
     <>
         <Navbar/>
-        <div className='landingPage'>
-            <h1>Landing Page</h1>
-            <NavLink to='/playerHub'><button>Login</button></NavLink>
+        <div className='playerHub'>
+            <h1 className='top'>Rooms</h1>
+            <h1 className='bottom'>Create a room</h1>
         </div>
       <Footer/>
     </>

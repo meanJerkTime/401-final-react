@@ -1,6 +1,7 @@
 import React from 'react';
 import './combatArea.scss';
 import CardsInHand from './cards-in-hand/cardsInHand.js';
+import Monster from './monster/monster.js';
 
 
 
@@ -8,7 +9,7 @@ function CombatArea() {
   return (
     <>
       <div className="combat-area-grid">
-          <h1 className='monster'>monster</h1>
+          <Monster/>
           <CardsInHand />
       </div>
     </>

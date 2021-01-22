@@ -33,7 +33,6 @@ export default function Navbar() {
           </Typography>
           <Typography variant="h6" className={classes.title}>
             <NavLink to="/about">About</NavLink>
-            
           </Typography>
           <Button id='signUp' color="inherit">Signup</Button>
         </Toolbar>

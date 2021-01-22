@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 let socket;
 
 function EventTest () {
-  const ENDPOINT = 'localhost:5000';
+  const ENDPOINT = 'js401-final-test-server.herokuapp.com';
   socket = io(ENDPOINT);
 
   function handleClick () {

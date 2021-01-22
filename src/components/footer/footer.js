@@ -5,7 +5,7 @@ import './footer.scss';
 export default function Footer() {
   return (
     <>
-      <h1>FOOTER</h1>
+      <footer><a href="https://github.com/meanJerkTime" target="_blank">&copy; 2021 Mean Jerk Time</a></footer>
     </>
   );
 }

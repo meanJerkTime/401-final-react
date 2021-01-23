@@ -11,6 +11,7 @@ import PlayerHub from './components/player-hub/playerHub.js';
 function App() {
   return (
     <>
+
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Landing}/>

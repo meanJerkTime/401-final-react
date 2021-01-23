@@ -85,7 +85,7 @@ export default function aboutPage() {
         </div>
     </div>
 
-    <div className="card">
+    <div className="aboutCard">
         <div className="card-front"></div>
         <div className="card-back">
             <h4>Chris Bortel<br /><span>UI/UX</span></h4>
@@ -99,10 +99,10 @@ export default function aboutPage() {
 
 
 
-</section>
+    </section>
 
-      <Footer/>
+    <Footer/>
     </div>
-  )
+)
 }
 

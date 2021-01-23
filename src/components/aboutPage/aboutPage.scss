@@ -1,35 +1,35 @@
 //TODO: I think that I want to make this a hover instead of a flip
 
-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: space-between;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-.card {
-  background-color: hotpink;
-  width: 200px;
-  height:300px;
-
 // section {
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+//   align-content: space-between;
+//   flex-wrap: wrap;
 //   margin: 0;
 //   padding: 0;
-//   // font-family: 'Josefin Sans', sans-serif
-//   // background-color: #eee
-//   // a
-//   // color: #ffffff
-//   // text-decoration: none
-// }
-  
+
 // .card {
+//   background-color: hotpink;
+//   width: 200px;
+//   height:300px;
+
+// // section {
+// // display: flex;
+// // flex-direction: column;
+// // justify-content: center;
+// //   margin: 0;
+// //   padding: 0;
+// //   // font-family: 'Josefin Sans', sans-serif
+// //   // background-color: #eee
+// //   // a
+// //   // color: #ffffff
+// //   // text-decoration: none
+// // }
+  
+// .about-page {
 //   // border: 1px solid red;
-//   // position: absolute;
+//   position: absolute;
 //   // border: solid 1px ;
 //   top: 50%;
 //   left: 50%;
@@ -89,17 +89,18 @@ section {
 //     }
 //     }
 
-    a{
+//     a{
       
-    height: 20px;
-    width: 20px;
-    padding: 5px 5px;
-    border-radius: 4px;
-    line-height: 20px;
-    &:hover {
+//     height: 20px;
+//     width: 20px;
+//     padding: 5px 5px;
+//     border-radius: 4px;
+//     line-height: 20px;
+//     &:hover {
 
-      color: #000000;
-      background-color: #fff;
-    }
-    }
-}
+//       color: #000000;
+//       background-color: #fff;
+//     }
+//     }
+// }
+// }

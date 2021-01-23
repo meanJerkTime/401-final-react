@@ -1,13 +1,13 @@
 import React from 'react';
 import './activeCards.scss';
-
+import MyCarousel from './card-carousal.js';
 
 
 export default function ActiveCards() {
   return (
     <>
       <div id="">
-          <h1>Active Cards</h1>
+          <MyCarousel/>
       </div>
     </>
   );

@@ -36,7 +36,8 @@ export default function reducer(state = initialState, action) {
     case 'INITIALIZE':
       return {...state, cards:payload}
     case 'ACTIVATECARD':
-      return {...state, activeCard:payload}
+      return {...state, activeCard:[...state.activeCard, payload]
+      }
     default:
       return state
   }
@@ -53,7 +54,7 @@ export const initialize = (payload) => {
 export const activateCard = (payload) => {
   return {
     type: 'ACTIVATECARD',
-    payload: payload,
+    payload: payload
   }
 }
 

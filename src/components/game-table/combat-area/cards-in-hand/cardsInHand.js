@@ -11,10 +11,12 @@ export default function CardsInHand() {
 
   const cards = useSelector( state => state.game)
   const dispatch = useDispatch()
+  console.log(cards)
   
   const equipCard = () => {
     console.log('boobies')
-    // dispatch(actions.increment());
+    // console.log(actions.activateCard())
+    // dispatch(actions.activateCard());
   }
 
   return (
@@ -22,7 +24,7 @@ export default function CardsInHand() {
       <div className="cards-in-hand">
             <ul id='cards' >
             {
-              cards.cards.map(card  => <li onClick={equipCard}><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
+             cards.cards.map(card  => <li onClick={() => dispatch(actions.activateCard(card))}><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
                     <Card.Img variant="top" src={card.image} />
                 </Card></li>
             )

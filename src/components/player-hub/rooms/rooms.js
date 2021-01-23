@@ -1,4 +1,4 @@
-import { ChevronRightSharp } from '@material-ui/icons';
+import { NavLink } from 'react-router-dom';
 import React from 'react';
 import './rooms.scss';
 
@@ -11,7 +11,9 @@ export default function Landing() {
         <ul className='top'>
             {
                 rooms.map(room =><button>
-                    <li>{room.roomName}</li>
+                        <NavLink to='/game'>
+                            <li>{room.roomName}</li>
+                        </NavLink>
                     </button>
             )
             }

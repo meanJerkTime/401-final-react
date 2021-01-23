@@ -6,7 +6,7 @@ export default function aboutPage() {
   return (
     <div>
       <Navbar/>
-      <div className="card">
+      <div className="about-page">
         <div className="card-front"></div>
         <div className="card-back">
             <h2>Jane Doe<br /><span>Senior Designer</span></h2>

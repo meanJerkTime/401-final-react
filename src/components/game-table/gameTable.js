@@ -1,5 +1,5 @@
 import React from 'react';
-import {useSelector} from 'react-redux';
+
 
 
 
@@ -13,12 +13,10 @@ import './gameTable.scss';
 
 
 export default function GamePage() {
-  const gameTable = useSelector( state => state.game)
-  console.log(gameTable)
+ 
   return (
     <>
     <Navbar/>
-      <h2>{gameTable.people}</h2>
       <div id="GameTable">
         
         <div class="grid-container">

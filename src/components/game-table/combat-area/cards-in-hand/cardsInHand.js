@@ -1,17 +1,20 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import {useDispatch, useSelector} from 'react-redux';
 import './cardsInHand.scss';
 
 export default function CardsInHand() {
 
+  const cards = useSelector( state => state.game)
+  console.log(cards)
   return (
     <>
       <div className="cards-in-hand">
             <ul id='cards'>
             {
-                cards.map(card => <button data-tip data-for="registerTip"><Card className="zoom" style={{ width: '100px' }}>
+              cards.cards.map(card => <Card className="zoom" style={{ width: '100px' }}>
                     <Card.Img variant="top" src={card.image} />
-                </Card></button>
+                </Card>
             )
             }
           </ul> 
@@ -20,30 +23,3 @@ export default function CardsInHand() {
   );
 }
 
-const cards = [
-    {
-      name: "Card 1",
-      image: "https://th.bing.com/th/id/R8f4fac15c62e09c70545cc9d41d3399c?rik=GE3KdXjcmxuKZQ&riu=http%3a%2f%2forig13.deviantart.net%2fff0c%2ff%2f2012%2f133%2f7%2fa%2fa_mimic______original_munchkin_card_by_templarsora-d4zlcbq.png&ehk=Lnt8WwAldUw4GY110BvMBo9wZbOUoXqWuxna3uyZdek%3d&risl=&pid=ImgRaw",
-      age: 24
-    },
-    {
-      name: "Card 2",
-      image: "https://th.bing.com/th/id/R8f4fac15c62e09c70545cc9d41d3399c?rik=GE3KdXjcmxuKZQ&riu=http%3a%2f%2forig13.deviantart.net%2fff0c%2ff%2f2012%2f133%2f7%2fa%2fa_mimic______original_munchkin_card_by_templarsora-d4zlcbq.png&ehk=Lnt8WwAldUw4GY110BvMBo9wZbOUoXqWuxna3uyZdek%3d&risl=&pid=ImgRaw",
-      age: 26
-    },
-    {
-      name: "Card 3",
-      image: "https://th.bing.com/th/id/R8f4fac15c62e09c70545cc9d41d3399c?rik=GE3KdXjcmxuKZQ&riu=http%3a%2f%2forig13.deviantart.net%2fff0c%2ff%2f2012%2f133%2f7%2fa%2fa_mimic______original_munchkin_card_by_templarsora-d4zlcbq.png&ehk=Lnt8WwAldUw4GY110BvMBo9wZbOUoXqWuxna3uyZdek%3d&risl=&pid=ImgRaw",
-      age: 26
-    },
-    {
-      name: "Card 4",
-      image: "https://th.bing.com/th/id/R8f4fac15c62e09c70545cc9d41d3399c?rik=GE3KdXjcmxuKZQ&riu=http%3a%2f%2forig13.deviantart.net%2fff0c%2ff%2f2012%2f133%2f7%2fa%2fa_mimic______original_munchkin_card_by_templarsora-d4zlcbq.png&ehk=Lnt8WwAldUw4GY110BvMBo9wZbOUoXqWuxna3uyZdek%3d&risl=&pid=ImgRaw",
-      age: 26
-    },
-    {
-      name: "card 5",
-      image: "https://th.bing.com/th/id/R8f4fac15c62e09c70545cc9d41d3399c?rik=GE3KdXjcmxuKZQ&riu=http%3a%2f%2forig13.deviantart.net%2fff0c%2ff%2f2012%2f133%2f7%2fa%2fa_mimic______original_munchkin_card_by_templarsora-d4zlcbq.png&ehk=Lnt8WwAldUw4GY110BvMBo9wZbOUoXqWuxna3uyZdek%3d&risl=&pid=ImgRaw",
-      age: 26
-    }
-  ]

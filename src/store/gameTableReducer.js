@@ -26,7 +26,7 @@ const initialState = {
       age: 26
     }
   ],
-  activeCard: []
+  activeCards: []
 }
 
 export default function reducer(state = initialState, action) {
@@ -36,7 +36,7 @@ export default function reducer(state = initialState, action) {
     case 'INITIALIZE':
       return {...state, cards:payload}
     case 'ACTIVATECARD':
-      return {...state, activeCard:[...state.activeCard, payload]
+      return {...state, activeCards:[...state.activeCards, payload]
       }
     default:
       return state

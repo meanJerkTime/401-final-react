@@ -1,79 +1,96 @@
 //TODO: I think that I want to make this a hover instead of a flip
-// body {
 
-//   margin: 0
-//   padding: 0
-//   font-family: 'Josefin Sans', sans-serif
-//   background-color: #eee
-//   a
-//   color: #ffffff
-//   text-decoration: none
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.card {
+  background-color: hotpink;
+  width: 200px;
+  height:300px;
+
+// section {
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+//   margin: 0;
+//   padding: 0;
+//   // font-family: 'Josefin Sans', sans-serif
+//   // background-color: #eee
+//   // a
+//   // color: #ffffff
+//   // text-decoration: none
 // }
   
-.card {
-  // border: 1px solid red;
-  position: absolute;
-  // border: solid 1px ;
-  top: 50%;
-  left: 50%;
-  height: 200px;
-  width: 150px;
-  transform: translate(-50%, -50%);
-  transform-style: preserve-3d;
-  perspective: 600px;
-  transition: .5s;
-  &:hover .card-front {
+// .card {
+//   // border: 1px solid red;
+//   // position: absolute;
+//   // border: solid 1px ;
+//   top: 50%;
+//   left: 50%;
+//   height: 200px;
+//   width: 150px;
+//   transform: translate(-50%, -50%);
+//   transform-style: preserve-3d;
+//   perspective: 600px;
+//   transition: .5s;
+//   &:hover .card-front {
 
-    transform: rotateX(-180deg);
-  }
-  &:hover .card-back {
+//     transform: rotateX(-180deg);
+//   }
+//   &:hover .card-back {
 
-    transform: rotateX(0deg);
-  }
-}
+//     transform: rotateX(0deg);
+//   }
+// }
 
 
-.card-front {
+// .card-front {
 
-  height: 100%;
-  width: 100%;
-  // background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: .5s;
-}
+//   height: 100%;
+//   width: 100%;
+//   // background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg);
+//   background-position: 50% 50%;
+//   background-size: cover;
+//   // position: absolute;
+//   top: 0;
+//   left: 0;
+//   background-color: #000000;
+//   backface-visibility: hidden;
+//   transform: rotateX(0deg);
+//   transition: .5s;
+// }
 
-.card-back {
+// .card-back {
 
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  backface-visibility: hidden;
-  transform: rotateX(180deg);
-  transition: .5s;
-  color: #ffffff;
-  text-align: center;
+//   height: 100%;
+//   width: 100%;
+//   // position: absolute;
+//   top: 0;
+//   left: 0;
+//   background-color: #000000;
+//   backface-visibility: hidden;
+//   transform: rotateX(180deg);
+//   transition: .5s;
+//   color: #ffffff;
+//   text-align: center;
   
-    h2 {
+//     h2 {
 
-    margin: 60% auto 35% auto;
-    font-size: 26px;
-    span {
-     font-size: 20px;
-    }
-    }
+//     margin: 60% auto 35% auto;
+//     font-size: 26px;
+//     span {
+//      font-size: 20px;
+//     }
+//     }
 
     a{
-
+      
     height: 20px;
     width: 20px;
     padding: 5px 5px;

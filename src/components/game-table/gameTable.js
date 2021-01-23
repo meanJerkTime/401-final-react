@@ -16,7 +16,7 @@ export default function GamePage() {
         
         <div class="grid-container">
           <div className='activeCards'>
-          <ActiveCards />
+            <ActiveCards />
           </div>
           <div className='combatArea'>
             <CombatArea />

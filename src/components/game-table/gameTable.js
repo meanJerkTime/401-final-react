@@ -19,7 +19,7 @@ export default function GamePage() {
     <Navbar/>
       <div id="GameTable">
         
-        <div class="grid-container">
+        <div className="grid-container">
           <div className='activeCards'>
             <ActiveCards />
           </div>

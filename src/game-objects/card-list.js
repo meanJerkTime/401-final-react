@@ -1,3 +1,5 @@
+'use strict';
+
 // collection of classes used to generate new cards
 
 const {Monster, Equipment, LevelUp, Consumable, } = require('./card-creators.js');
@@ -46,8 +48,20 @@ const doorDeck = [
     - additional effect, i.e 'Whine at the GM' and 'Mutilate the Bodies'
 */
 
+/* Equipment cards include:
+    - name
+    - image
+    - bonus
+    - exception
+    - bodyPart
+    - numberOfHands
+    - bigItem
+    - value
+*/
+
 const treasureDeck = [
 
+  // level up cards
   new LevelUp( '1000 Gold Pieces', 'image link', (player)=>{player.level + 1}, null ),
   new LevelUp( 'Boil An Anthill', 'image link', (player)=>{player.level + 1}, null ),
   new LevelUp( 'Bribe GM With Food', 'image link', (player)=>{player.level + 1}, null ),
@@ -57,9 +71,55 @@ const treasureDeck = [
   new LevelUp( 'Potion Of General Studliness', 'image link', (player)=>{player.level + 1}, null ),
   new LevelUp( 'Whine At The GM', 'image link', (player)=>{player.level + 1}, 'Cannont use if highest level or tied with highest level' ),
 
+  // equipable items
+  new Equipment( 'Boots Of Butt-Kicking', 'image link', 2, null, 'footgear', null, false, 400 ),
+  new Equipment( 'Buckler Of Swashing', 'image link', 2, null, 'held', 1, false, 400 ),
+  new Equipment( 'Chainsaw Of Bloody Dismemberment', 'image link', 3, null, 'held', 2, true, 600 ),
+  new Equipment( 'Eleven-Foot Pole', 'image link', 1, null, 'held', 2, false, 200 ),
+  new Equipment( 'Flaming Armor', 'image link', 2, null, 'armor', null, false, 400 ),
+  new Equipment( 'Helm Of Courage', 'image link', 1, null, 'headgear', null, false, 200 ),
+  new Equipment( 'Horny Helmet', 'image link', 1, '+3 for Elves', 'headgear', null, false, 600 ),
+  new Equipment( 'Huge Rock', 'image link', 3, null, 'held', 2, true, 0 ),
+  new Equipment( 'Leather Armor', 'image link', 1, null, 'armor', null, false, 200 ),
+  new Equipment( 'Mithril Armor', 'image link', 3, 'not usable by wizards', 'armor', null, true, 600 ),
+  new Equipment( 'Pantyhose Of Giant Strength', 'image link', 3, 'not usable by warrior', null, null, false, 600 ),
+  new Equipment( 'Rat On A Stick', 'image link', 1, 'may discard to automatically escape from a monster level 8 or below', 'held', 1, false, 0 ),
+  new Equipment( 'Really Impressive Title', 'image link', 3, null, null, null, false, 0 ),
+  new Equipment( 'Slimy Armor', 'image link', 1, null, 'armor', null, false, 200 ),
+  new Equipment( 'Sneaky Bastard Sword', 'image link', 2, null, 'held', 1, false, 400 ),
+  new Equipment( 'Spiky Knees', 'image link', 1, null, null, null, false, 200 ),
+  new Equipment( 'Bad-Ass Bandana', 'image link', 3, 'usable by human only', 'headgear', null, false, 400 ),
+  new Equipment( 'Bow With Ribbons', 'image link', 4, 'usable by elf only', 'held', 2, false, 800 ),
+  new Equipment( 'Broad Sword', 'image link', 3, 'usable by females only', 'held', 1, false, 400 ),
+  new Equipment( 'Cheese Grater Of Peace', 'image link', 3, 'usable by clerics only', 'held', 1, false, 400 ),
+  new Equipment( 'Claok Of Obscurity', 'image link', 4, 'usable by thief only', null, null, false, 600 ),
+  new Equipment( 'Dagger Of Treachery', 'image link', 3, 'usable by thief only', 'held', 1, false, 400 ),
+  new Equipment( 'Gentleman\'s Club', 'image link', 3, 'usable by males only', 'held', 1, false, 400 ),
+  new Equipment( 'Hammer Of Kneecapping', 'image link', 4, 'usable by dwarf only', 'held', 1, false, 600 ),
+  new Equipment( 'Mace Of Sharpness', 'image link', 4, 'usable by clerics only', 'held', 1, false, 600 ),
+  new Equipment( 'Pointy Hat', 'image link', 3, 'usable by wizard only', 'headgear', null, false, 400 ),
+  new Equipment( 'Rapier Of Unfairness', 'image link', 3, 'usable by elf only', 'held', 1, false, 600 ),
+  new Equipment( 'Shield Of Ubiquity', 'image link', 4, 'usable by warrior only', 'held', 1, true, 600 ),
+  new Equipment( 'Staff Of Napalm', 'image link', 5, 'usable by wizard only', 'held', 2, false, 800 ),
+  new Equipment( 'Stepladder', 'image link', 3, 'usable by halfling only', null, null, true, 400 ),
+  new Equipment( 'Swiss Army Polearm', 'image link', 4, 'usable by human only', 'held', 2, false, 600 ),
+
+  /* Equipment cards include:
+    - name
+    - image
+    - bonus
+    - exception
+    - bodyPart
+    - numberOfHands
+    - bigItem
+    - value
+*/
+
+  // consumable items
+
 ];
 
-console.log(doorDeck);
+console.log(treasureDeck.length);
 
 module.exports = {
   doorDeck,

@@ -1,3 +1,5 @@
+'use strict';
+
 // generic player object used for all games/plays
 
 class Player {

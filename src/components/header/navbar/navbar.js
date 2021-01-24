@@ -49,15 +49,15 @@ const Navbar = () => {
           <div className="dropdown-content">
           <label>
               Username
-        <input name="username" onChange={handleChange} />
-            </label>
-            <br />
-            <label>
-              Password
-        <input name="password" onChange={handleChange} />
-            </label>
-            <br />
-            <button onClick={handleSubmit}>Submit</button>
+          <input name="username" onChange={handleChange} />
+              </label>
+              <br />
+          <label>
+                Password
+          <input name="password" onChange={handleChange} />
+              </label>
+              <br />
+          <button onClick={handleSubmit}>Submit</button>
               
           </div>
         </div> 

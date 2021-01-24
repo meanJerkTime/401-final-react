@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Landing from './components/landing-page/landingPage.js';
+import Game from './components/game-table/gameTable.js';
+import About from './components/aboutPage/aboutPage.js';
+import Rules from './components/rules/rules.js';
+import PlayerHub from './components/player-hub/playerHub.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={Landing}/>
+          <Route exact path='/game' component={Game}/>
+          <Route path="/about" component={About}/>
+          <Route path="/rules" component={Rules}/>
+          <Route path="/playerHub" component={PlayerHub}/>
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 }
 

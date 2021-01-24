@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import {useDispatch, useSelector} from 'react-redux';
+import Card from 'react-bootstrap/Card';
 import * as actions from '../../../../store/gameTableReducer.js'
 
 import './cardsInHand.scss';

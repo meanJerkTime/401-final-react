@@ -25,7 +25,7 @@ const doorDeck = [
   new Monster( 'Gelatinous Octahedron', 'image link', 2, false, '+1 to run away', 'drop all big items', 1, 1 ),
   new Monster( 'Ghoulfiends', 'image link', 8, false, 'no bonus from items, use level only', 'become equal to lowest level payer', 1, 2 ),
   new Monster( 'Harpies', 'image link', 4, false, '+5 against wizards', 'lose two levels', 1, 2 ),
-  new Monster( 'Lame Goblin', 'image link', 1, false, '+1 to run away', 'lose one level1', 1, 1 ),
+  new Monster( 'Lame Goblin', 'image link', 1, false, '+1 to run away', 'lose one level', 1, 1 ),
   new Monster( 'Large Angry Chicken', 'image link', 2, false, '+1 level if you defeat it with fire or flame', 'lose a level', 1, 1 ),
   new Monster( 'Lawyers', 'image link', 6, false, 'will not attack thief, thieves can discard two treasures and draw two face down treasures', 'all players take a card from your hand starting with left, discard remainders', 1, 2 ),
   new Monster( 'Maul Rat', 'image link', 1, false, '+3 against clerics', 'lose a level', 1, 1 ),

@@ -9,7 +9,6 @@ class Equipment {
     this.type = 'equipment';
     this.cardName = cardName; // name of card
     this.image = image; // link to image of card face
-
     this.bonus = bonus; //  number indicating bonus to player combat strength
     this.exception = exception // i.e. usable by elves only
     this.bodyPart = bodyPart; // where the equipment goes i.e body == armor, feet == footgear

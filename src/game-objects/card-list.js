@@ -17,6 +17,7 @@ const {Monster, Equipment, LevelUp, Consumable, } = require('./card-creators.js'
 
 const doorDeck = [
 
+  // Monster cards
   new Monster( 'Bigfoot', 'image link', 12, false, '+3 against dwarves and halflings', 'lose your headgear', 1, 3 ),
   new Monster( 'Crabs', 'image link', 1, false, 'cannot escape', 'discard all armor and all items worn below the waist', 1, 1 ),
   new Monster( 'Flying Frogs', 'image link', 2, false, '-2 to run away', 'lose two levels', 1, 1 ),
@@ -56,6 +57,14 @@ const doorDeck = [
     - bodyPart
     - numberOfHands
     - bigItem
+    - value
+*/
+
+/* Consumable cards include:
+    - name
+    - image
+    - modifier, bonus to combat
+    - effect, non-combat bonuses
     - value
 */
 
@@ -103,17 +112,6 @@ const treasureDeck = [
   new Equipment( 'Staff Of Napalm', 'image link', 5, 'usable by wizard only', 'held', 2, false, 800 ),
   new Equipment( 'Stepladder', 'image link', 3, 'usable by halfling only', null, null, true, 400 ),
   new Equipment( 'Swiss Army Polearm', 'image link', 4, 'usable by human only', 'held', 2, false, 600 ),
-
-  /* Equipment cards include:
-    - name
-    - image
-    - bonus
-    - exception
-    - bodyPart
-    - numberOfHands
-    - bigItem
-    - value
-*/
 
   // consumable items
 

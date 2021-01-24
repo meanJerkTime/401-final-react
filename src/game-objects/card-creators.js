@@ -29,7 +29,7 @@ class Consumable {
     this.image = image; // link to image of card face
     this.modifier = modifier; // the bonus given to combat
     this.effect = effect; // any other effect the card provides i.e. +1 to run away
-    this.value = value; // will be a number pf gold pieces
+    this.value = value; // will be a number of gold pieces
   };
 
 };

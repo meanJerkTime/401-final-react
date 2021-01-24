@@ -1,10 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 import './navbar.scss';
 
@@ -29,8 +25,16 @@ const Navbar = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(formData);
-    
-  };
+    axios.post('https://munchkin-auth.herokuapp.com/signup', {
+      username: formData.username,
+      password: formData.password
+    })
+    .then((response) => {
+      console.log(response);
+    }, (error) => {
+      console.log(error);
+    });
+  }
   
   return (
     <>
@@ -59,8 +63,6 @@ const Navbar = () => {
         </div> 
         <NavLink to="/about">About</NavLink>
       </div>
-
-      
     </>
 
 

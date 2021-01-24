@@ -8,20 +8,30 @@ import { NavLink } from 'react-router-dom';
 
 import './navbar.scss';
 
+const Navbar = () => {
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(1),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
-export default function Navbar() {
-  const classes = useStyles();
+  const initialFormData = Object.freeze({
+    username: "",
+    password: ""
+  });
+
+  const [formData, updateFormData] = React.useState(initialFormData);
+  
+  const handleChange = (e) => {
+    updateFormData({
+      ...formData,
+  
+      // Trimming any whitespace
+      [e.target.name]: e.target.value.trim()
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(formData);
+    
+  };
+  
   return (
     <>
       <div className="navbar">
@@ -33,17 +43,24 @@ export default function Navbar() {
             <i className="fa fa-caret-down"></i>
           </button>
           <div className="dropdown-content">
-            <form>
-              <label for='username'>Username</label>
-              <input type='text' id='username' name='username'/>
-              <label for='password'>Password</label>
-              <input type='password' id='password' name='password'/>
-            </form>
-            <button>Submit</button>
+          <label>
+              Username
+        <input name="username" onChange={handleChange} />
+            </label>
+            <br />
+            <label>
+              Password
+        <input name="password" onChange={handleChange} />
+            </label>
+            <br />
+            <button onClick={handleSubmit}>Submit</button>
+              
           </div>
         </div> 
         <NavLink to="/about">About</NavLink>
       </div>
+
+      
     </>
 
 
@@ -52,3 +69,5 @@ export default function Navbar() {
    
   );
 }
+
+export default Navbar;

@@ -1,4 +1,3 @@
-
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,7 +7,8 @@ import About from './components/aboutPage/aboutPage.js';
 import Rules from './components/rules/rules.js';
 import PlayerHub from './components/player-hub/playerHub.js';
 
-function App() {
+
+function App () {
   return (
     <>
 
@@ -22,7 +22,8 @@ function App() {
         </Switch>
       </BrowserRouter>
     </>
+
   );
-}
+};
 
 export default App;

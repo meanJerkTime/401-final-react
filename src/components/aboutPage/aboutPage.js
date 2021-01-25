@@ -4,50 +4,29 @@ import Footer from '../footer/footer.js';
 import './aboutPage.scss';
 export default function aboutPage() {
   return (
-    <div>
-      <Navbar/>
-     
+      <>
+   <Navbar/>
+  
 
-    <section className="wrapper">
-    <div className="aboutCard" >
-        1. Diane Stephani<br /><span>Game Logic</span>
+    <div class="grid-container">
+    <div class="diane about-card">diane</div>
+    <div class="peng about-card">peng</div>
+    <div class="joe about-card">joe</div>
+    <div class="kory about-card">kory</div>
+    <div class="brendon about-card">brendon</div>
+    <div class="chris about-card">chris</div>
+    <div class="edgar about-card">edgar</div>
     </div>
-
-{/* Backend */}
-    <div className="aboutCard" item1>
-        2. Peng Chen<br /><span>Backend</span>
-    </div>
-
-{/* Game Logic */}
-    <div className="aboutCard">
-    3. Joe Pennock <br /><span>Game Logic</span>
-    </div>
-
-    <div className="aboutCard">
-    4. Kory Jackson<br /><span>Game Logic</span>
-    </div>
-
-
-{/* UI/UX */}
-    <div className="aboutCard">
-    5. Brendon Hampton<br /><span>UI/UX</span>
-    </div>
-
-    <div className="aboutCard">
-    6. Edgar Romero<br /><span>UI/UX</span>
-    </div>
-
-    <div className="aboutCard">
-    7. Chris Bortel<br /><span>UI/UX</span>
-    </div>
+    <div class="footer"><Footer/></div>
+    
 
 
 
 
 
-    </section>
-    <Footer/>
-    </div>
+
+    
+    </>
 )
 }
 
@@ -140,3 +119,40 @@ export default function aboutPage() {
 //             </div>
 //         </div>
 //     </div> */}
+
+
+
+
+
+
+// <section className="wrapper">
+// <div className="aboutCard" >
+//     1. Diane Stephani<br /><span>Game Logic</span>
+// </div>
+
+
+// <div className="aboutCard" item1>
+//     2. Peng Chen<br /><span>Backend</span>
+// </div>
+
+// <div className="aboutCard">
+// 3. Joe Pennock <br /><span>Game Logic</span>
+// </div>
+
+// <div className="aboutCard">
+// 4. Kory Jackson<br /><span>Game Logic</span>
+// </div>
+
+
+// <div className="aboutCard">
+// 5. Brendon Hampton<br /><span>UI/UX</span>
+// </div>
+
+// <div className="aboutCard">
+// 6. Edgar Romero<br /><span>UI/UX</span>
+// </div>
+
+// <div className="aboutCard">
+// 7. Chris Bortel<br /><span>UI/UX</span>
+// </div>
+// </section>

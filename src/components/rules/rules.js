@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../header/navbar/navbar.js';
+import LoggedInNavbar from '../header/navbar/loggedInNavbar.js';
 import Footer from '../footer/footer.js';
 import './rules.scss';
 
@@ -7,7 +7,7 @@ export default function Rules() {
 
   return (
     <>
-        <Navbar/>
+        <LoggedInNavbar/>
         <div className='rules'>
             <h1>Rules</h1>
         </div>

@@ -36,7 +36,7 @@ export default function Landing() {
     })
     .then((response) => {
       console.log(response);
-      window.location = "/playerHub"
+      window.location.href = "/playerHub";
 
     }, (error) => {
       console.log(error);
@@ -58,7 +58,7 @@ export default function Landing() {
           <input name="password" onChange={handleChange} />
         </label>
         <br />
-            <NavLink to='/playerHub'><button onClick={handleSubmit}>Login</button></NavLink>
+            <button onClick={handleSubmit}>Login</button>
         </div>
       <Footer/>
     </>

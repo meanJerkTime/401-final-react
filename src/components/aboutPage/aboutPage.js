@@ -9,13 +9,21 @@ export default function aboutPage() {
   
 
     <div class="grid-container">
-    <div class="diane about-card">diane</div>
-    <div class="peng about-card">peng</div>
-    <div class="joe about-card">joe</div>
-    <div class="kory about-card">kory</div>
-    <div class="brendon about-card">brendon</div>
-    <div class="chris about-card">chris</div>
-    <div class="edgar about-card">edgar</div>
+    <div class="diane about-card">
+    <p>Diane Stephani <br/> <span>Project Manager</span></p>
+        
+        <div className="social-icons">
+            <a href="https://github.com/dianestephani" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
+            <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"></a> */}
+        </div>
+    </div>
+    <div class="peng about-card">Peng Chen</div>
+    <div class="joe about-card">Joe Pennock</div>
+    <div class="kory about-card">Kory Jackson</div>
+    <div class="brendon about-card">Brendon Hampton</div>
+    <div class="chris about-card">Chris Bortel</div>
+    <div class="edgar about-card">Edgar Romero</div>
     </div>
     <div class="footer"><Footer/></div>
     
@@ -32,17 +40,17 @@ export default function aboutPage() {
 
 
 
-// {/* <div className="card">
-//         <div className="card-front"></div>
-//         <div className="card-back">
-//             <h4>Diane Stephani<br /><span>Game Logic</span></h4>
-//             <div className="social-icons">
-//                 <a href="https://github.com/dianestephani" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
-//                 {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
-//                 <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"></a> */}
-//             </div>
-//         </div>
-//     </div>
+<div className="card">
+         <div className="card-front"></div>
+         <div className="card-back">
+             <h4>Diane Stephani<br /><span>Game Logic</span></h4>
+             <div className="social-icons">
+                 <a href="https://github.com/dianestephani" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+                 <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
+                 <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"></a>
+             </div>
+         </div>
+     </div>
 
 // {/* Backend */}
 // <div className="card">

@@ -7,44 +7,45 @@ export default function aboutPage() {
     <div>
       <Navbar/>
      
-<section>
 
-    <div className="aboutCard">
-        <p>Diane Stephani<br /><span>Game Logic</span></p>
+    <section className="wrapper">
+    <div className="aboutCard" >
+        1. Diane Stephani<br /><span>Game Logic</span>
     </div>
 
 {/* Backend */}
-    <div className="aboutCard">
-        <p>Peng Chen<br /><span>Backend</span></p>
+    <div className="aboutCard" item1>
+        2. Peng Chen<br /><span>Backend</span>
     </div>
 
 {/* Game Logic */}
     <div className="aboutCard">
-    <p>Joe Pennock<br /><span>Game Logic</span></p>
+    3. Joe Pennock <br /><span>Game Logic</span>
     </div>
 
     <div className="aboutCard">
-    <p>Kory Jackson<br /><span>Game Logic</span></p>
+    4. Kory Jackson<br /><span>Game Logic</span>
     </div>
 
 
 {/* UI/UX */}
     <div className="aboutCard">
-    <p>Brendon Hampton<br /><span>UI/UX</span></p>
+    5. Brendon Hampton<br /><span>UI/UX</span>
     </div>
 
     <div className="aboutCard">
-    <p>Edgar Romero<br /><span>UI/UX</span></p>
+    6. Edgar Romero<br /><span>UI/UX</span>
     </div>
 
     <div className="aboutCard">
-    <p>Chris Bortel<br /><span>UI/UX</span></p>
+    7. Chris Bortel<br /><span>UI/UX</span>
     </div>
+
+
 
 
 
     </section>
-
     <Footer/>
     </div>
 )

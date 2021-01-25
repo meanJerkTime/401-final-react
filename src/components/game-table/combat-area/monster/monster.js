@@ -1,12 +1,12 @@
 import React from 'react';
-import {useDispatch, useSelector} from 'react-redux';
+import {useSelector} from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import './monster.scss';
 
 export default function Monster() {
   
   const monster = useSelector( state => state.monster)
-  const monster1 = monster[0]
+  // const monster1 = monster[0]
   console.log(monster)
   return (
     <>

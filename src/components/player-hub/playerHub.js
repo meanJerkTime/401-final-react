@@ -5,7 +5,7 @@ import './playerHub.scss';
 import Rooms from './rooms/rooms.js';
 import CreateRoom from './create-a-room/createRoom.js';
 
-export default function Landing() {
+export default function PlayerHub() {
 
   return (
     <>

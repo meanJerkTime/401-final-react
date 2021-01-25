@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../header/navbar/navbar.js';
 import Footer from '../footer/footer.js';
 import './landingPage.scss';
-import {NavLink} from 'react-router-dom';
 import axios from 'axios';
 
 export default function Landing() {

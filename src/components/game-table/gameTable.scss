@@ -1,0 +1,19 @@
+li {
+  list-style: none;
+  text-align: center;
+}
+
+.grid-container {
+  margin-top:10px;
+  display:grid;
+  grid-template-columns: 0.6fr 1.7fr 0.6fr;
+  grid-template-rows: 1fr ;
+  gap: 0px 5px;
+  grid-template-areas:
+    "activeCards combatArea playersProgress";
+
+    .activeCards, .combatArea, .playersProgress{
+      border:1px solid;
+      height:500px;
+    }
+}

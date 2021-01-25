@@ -26,12 +26,18 @@ export default function Landing() {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(formData);
-    axios.post('https://munchkin-auth.herokuapp.com/signin', {
-      username: formData.username,
-      password: formData.password
+    axios({
+      method:'post',
+      url:'https://munchkin-auth.herokuapp.com/signin',
+      auth: {
+        username:formData.username,
+        password:formData.password
+      }
     })
     .then((response) => {
       console.log(response);
+      window.location = "/playerHub"
+
     }, (error) => {
       console.log(error);
     });

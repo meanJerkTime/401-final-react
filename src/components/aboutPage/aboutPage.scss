@@ -1,16 +1,20 @@
 //TODO: I think that I want to make this a hover instead of a flip
 
 
-
+.sub {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
   // grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   .grid-container {
   display: grid;
-  height: 88vh;
+  // height: 88vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   // grid-template-columns: repeat(auto-fit, minmax( 1fr));
-  grid-template-rows: 0.20fr 2.4fr 0.70fr 2.4fr .5fr;
+  grid-template-rows: 0.20fr 2.4fr .5fr 2.4fr .25fr;
   
   grid-template-areas:
     ". . . . . . . . . . . . . . . . . . ."
@@ -21,9 +25,9 @@
 }
 
 .about-card {
-  box-shadow: 0 0 0 24px #4A1813;
+  box-shadow: 0 0 0 22px #4A1813;
   background-color: #FACC96;
-  width: 300px;
+  // width: 275px;
   border-radius: 25px;
   padding:10px;
 
@@ -37,6 +41,7 @@
       font-size: 14px;
     }
     p {
+      font-family: 'Libre Caslon Display', serif;
       font-size: 12px;
       
     }

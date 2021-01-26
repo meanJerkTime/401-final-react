@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../header/navbar/navbar.js';
-import Footer from '../footer/footer.js';
+// import Navbar from '../header/navbar/navbar.js';
+// import Footer from '../footer/footer.js';
 import './aboutPage.scss';
 export default function aboutPage() {
   return (
       <>
-   <Navbar/>
+   {/* <Navbar/> */}
   
     <h2 className="sub">About Page</h2>
     <div class="grid-container">
@@ -159,19 +159,9 @@ export default function aboutPage() {
         </div>
     </div>
 
-
-
-
-
     </div>
-    <div class="footer"><Footer/></div>
+    {/* <div class="footer"><Footer/></div> */}
     
-
-
-
-
-
-
     
     </>
 )

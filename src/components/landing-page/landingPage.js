@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../header/navbar/navbar.js';
-import Footer from '../footer/footer.js';
+// import Navbar from '../header/navbar/navbar.js';
+// import Footer from '../footer/footer.js';
 import './landingPage.scss';
 import {NavLink} from 'react-router-dom';
 import axios from 'axios';
@@ -40,7 +40,7 @@ export default function Landing() {
 
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
       <div>
         <label>
           Username
@@ -54,7 +54,7 @@ export default function Landing() {
         <br />
             <NavLink to='/playerHub'><button onClick={handleSubmit}>Login</button></NavLink>
         </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }

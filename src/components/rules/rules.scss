@@ -1,0 +1,37 @@
+.about-grid-container {
+  display: grid;
+  background-color: #b2bec3;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1.6fr 1.6fr 0.4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    // ". . ."
+    ". game-rules ."
+    ". game-rules ."
+    ". . .";
+}
+.game-rules { 
+  grid-area: game-rules; 
+  justify-self: center;
+  margin-top: 10px;
+  border:10px double #4A1813;
+  border-radius: 15px;
+  background-color: bisque;
+  height:78vh;
+  width: 100%;
+  font-size: 50px;
+
+  h2 {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+.rules-sub { 
+  grid-area: rules-sub;
+  justify-self: center;
+
+  width: 90%;
+  align-self: end;
+  font-size: 20px;
+}

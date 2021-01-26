@@ -39,6 +39,8 @@ const LoggedOutNavbar = () => {
   return (
     <>
       <div className="navbar">
+      <NavLink to='/rules'>Rules</NavLink>
+      <NavLink to="/about">About</NavLink>
         <div className="dropdown">
           <button className="dropbtn">Signup
             <i className="fa fa-caret-down"></i>

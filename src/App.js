@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
+
+import {useSelector, Provider} from 'react-redux';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Landing from './components/landing-page/landingPage.js';
@@ -7,40 +9,30 @@ import Game from './components/game-table/gameTable.js';
 import About from './components/aboutPage/aboutPage.js';
 import Rules from './components/rules/rules.js';
 import PlayerHub from './components/player-hub/playerHub.js';
-import ProtectedRoute from './components/protected-route/protectedRoute.js';
-import Unauthorized from './components/unauthorized/unauthorized.js';
-
+import store from './store/store.js';
 
 function App () {
+  const user = useSelector( state => state.user);
+  console.log(user);
 
-  const [user, setUser] = useState(false);
-
-  // pass the user to the landing page to set it to true after handleSubmit
-  const handleLogin = e => {
-    e.preventDefault();
-    setUser(true);
-  }
-
-  const handleLogout = e => {
-    e.preventDefault();
-    setUser(false);
-  }
 
   return (
     <>
+      <Provider store={store}>
 
-      <BrowserRouter>
-        <Switch>
-        <Route exact path='/' handleLogin={handleLogin} render={props => <Landing {...props} user={user.toString()} />} />
-          <Route exact path='/game' component={Game}/>
-          <Route path="/about" component={About}/>
-          <Route path="/rules" component={Rules}/>
-          <ProtectedRoute path="/playerHub" handleLogout={handleLogout} user={user} component={PlayerHub}/>
-          <Route exact path='/unauthorized' component={Unauthorized} />
-        </Switch>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={Landing}/>
+            <Route exact path='/game' component={Game}/>
+
+            <Route exact path="/about" component={About}/>
+            
+            <Route exact path="/rules" component={Rules}/>
+            <Route exact path="/playerHub" component={PlayerHub}/> 
+          </Switch>
+        </BrowserRouter>
+      </Provider>  
     </>
-
   );
 };
 

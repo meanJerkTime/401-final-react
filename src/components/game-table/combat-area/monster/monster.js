@@ -13,12 +13,13 @@ export default function Monster() {
       <div id="">
       <ul id='' >
       {
-        monster.monster.map(item  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
-              <Card.Img variant="top" src={item.image} />
-              <li>{item.id}</li>
-              <li>{item.name}</li>
+      <li>
+        <Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
+              <Card.Img variant="top" src={monster.monster.image} />
+              <li>{monster.monster.name}</li>
+              <li>{monster.monster.level}</li>
           </Card></li>
-      )
+ 
       }
       </ul> 
       </div>

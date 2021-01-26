@@ -2,10 +2,23 @@ import React from 'react';
 import LoggedOutNavbar from '../header/navbar/loggedOutNavbar.js';
 import Footer from '../footer/footer.js';
 import './landingPage.scss';
+import {useSelector, useDispatch} from 'react-redux';
 import axios from 'axios';
+import {Redirect} from 'react-router-dom';
+import * as actions from '../../store/userReducer.js';
 
 
 export default function Landing(props) {
+
+
+  const user = useSelector( state => state.user);
+
+  const dispatch = useDispatch();
+
+  function loginDispatch(user) {
+    dispatch(actions.loginUser(user));
+  }
+
 
   const loginData = Object.freeze({
     username: "",
@@ -37,14 +50,15 @@ export default function Landing(props) {
       }
     })
     if(resp.status === 200) {
-      console.log(resp);
-      window.location.href = "/playerHub";
+      console.log(resp.data);
+      localStorage.setItem("user login info",JSON.stringify(resp.data));
+      loginDispatch(resp.data);
+      window.location.href = '/playerHub';
+
     }
   } catch (err) {
       console.log(err);
   }
-      
-
   };
 
 
@@ -62,7 +76,7 @@ export default function Landing(props) {
           <input name="password" onChange={handleChange} />
       </label>
       <br />
-      <button onClick={handleSubmit, props.handleLogin}>Login</button>
+      <button onClick={handleSubmit}>Login</button>
     </div>
     <Footer/>
     </>

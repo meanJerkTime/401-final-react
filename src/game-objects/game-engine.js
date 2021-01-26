@@ -41,13 +41,18 @@ function equipCards(player, card) {
   // validate type of card and where card is equipped
   // update player combat strength
 
-  const bodyPart = "";
+  let bodyPart = "";
   if (card.bodyPart) {
     bodyPart = card.bodyPart;
-    let playerEquip = `${player}.cardsEquipped.${bodyPart}`
+    let playerEquip = `${player}.cardsEquipped.${bodyPart}`;
+    player.combatStrength + card.bonus;
     playerEquip.push(card);
-  }
-  player.combatStrength + card.bonus;
+    let cardName = card.cardName;
+    let list = player.cardsInHand;
+    let handDiscard = list.filter(item => item.cardName !== cardName);
+    player.cardsInHand = handDiscard.map(item => { return item });
+    return;
+  } 
 };
 
 function combat(player, monster) {
@@ -58,7 +63,10 @@ function combat(player, monster) {
     // if successful, end combat and end turn
     // if unsuccessful, player level - 1
   
-  if (player.combatStrength > monster.level) { player.level + monster.levelsGiven };
+  if (player.combatStrength > monster.level) {
+    player.level + monster.levelsGiven;
+    player.combatStrength + monster.levelsGiven;
+  };
   if (player.combatStrength <= monster.level) {
     if (player.runaway) {
       let roll = runAway();
@@ -86,16 +94,20 @@ function discard(player, card) {
   // ensure that player hand array is 5 or less
 
   // front end logic possibly??
-  if (player.cardsInHand > 5) return "You must discard";
+  // if (player.cardsInHand > 5) return "You must discard";
   // function logic
+
   let cardName = card.cardName;
   let list = player.cardsInHand;
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].cardName === cardName) {
-      list.splice(i, 1);
-      break;
-    }
-  }
+  let handDiscard = list.filter(item => item.cardName !== cardName);
+  player.cardsInHand = handDiscard.map(item => { return item });
+
+  // Maybe add a "deck" option to cards so that we can discard in the appropriate piles
+  //
+  // this function will work for how our decks are set up but when we add more to the
+  // the door deck it would be a good Idea
+  if (card.type === "monster") { gameState.doorCardDiscards.push(card) }
+  return;
 };
 
-module.exports = gameEngine;
+module.exports = {gameEngine, discard, runAway, combat, equipCards};

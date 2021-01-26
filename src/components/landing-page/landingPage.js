@@ -41,16 +41,14 @@ export default function Landing() {
   return (
     <>
     {/* <Navbar/> */}
-      <div className="landing-grid-container">
+      <div className="landing-container">
       <div className="landing-page">
         <label>
-          Username
-          <input name="username" onChange={handleChange} />
+          <input name="username" onChange={handleChange} placeholder="Username" />
         </label>
         <br />
         <label>
-          Password
-          <input name="password" onChange={handleChange} />
+          <input name="password" onChange={handleChange} placeholder="Password"/>
         </label>
         <br />
             <NavLink to='/playerHub'><button onClick={handleSubmit}>Login</button></NavLink>
@@ -60,5 +58,10 @@ export default function Landing() {
     </>
   );
 }
+
+
+
+
+
 
 

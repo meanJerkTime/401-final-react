@@ -1,7 +1,8 @@
-html {
+html, body {
   height: 100%;
   background-color: #FFCC99;
-
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .apps-background {
   background-color: #FFCC99;

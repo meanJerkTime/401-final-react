@@ -14,11 +14,7 @@
 .r-2 { 
   grid-area: r-2; 
   display: grid;
-  // display: inline;
   justify-items:center;
-  // justify-content:space-around;
-  // flex-direction: row;
-  // border: 1px solid black;
   width:90%;
   overflow: scroll;
   
@@ -35,54 +31,3 @@
 }
 
 .sub-foot { grid-area: sub-foot; }
-
-// .about-grid-container {
-//   display: grid;
-//   justify-content: center;
-//   // background-color:#FFCC99;
-//   grid-template-columns: 1fr 2fr 1fr;
-//   grid-template-rows: 1.6fr 1.6fr 0.4fr;
-//   gap: 0px 0px;
-//   grid-template-areas:
-//     // ". . ."
-//     ". game-rules ."
-//     ". game-rules ."
-//     ". . .";
-// }
-// .game-rules { 
-//   grid-area: game-rules; 
-//   justify-content: center;
-//   align-items: center;
-//   margin-top: 30px;
-//   border:20px double  #4A1813;
-//   border-radius: 15px;
-//   background-color: #E4702A;
-//   height:78vh;
-//   width: 100%;
-//   font-size: 50px;
-
-//   h2 {
-//     display:flex;
-//     justify-content: center;
-//     margin-top: 20px;
-//   }
-
-//   .section-rules {
-//     background-color: #80B0C3;
-//     display: grid;
-//     justify-content: center;
-//     border: 4px black solid;
-//     border-radius: 5px;
-//     width:89%;
-//     height:70%;
-
-//   }
-// }
-// .rules-sub { 
-//   grid-area: rules-sub;
-//   justify-self: center;
-
-//   width: 90%;
-//   align-self: end;
-//   font-size: 20px;
-// }

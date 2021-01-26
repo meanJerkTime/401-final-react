@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   // grid-template-columns: repeat(auto-fit, minmax( 1fr));
-  grid-template-rows: 0.20fr 2.7fr 0.70fr 2.7fr .5fr;
+  grid-template-rows: 0.20fr 2.4fr 0.70fr 2.4fr .5fr;
   
   grid-template-areas:
     ". . . . . . . . . . . . . . . . . . ."

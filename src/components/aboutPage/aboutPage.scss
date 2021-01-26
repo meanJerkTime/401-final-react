@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   // grid-template-columns: repeat(auto-fit, minmax( 1fr));
-  grid-template-rows: 0.40fr 2.5fr 0.50fr 2.5fr .5fr;
+  grid-template-rows: 0.20fr 2.7fr 0.70fr 2.7fr .5fr;
   
   grid-template-areas:
     ". . . . . . . . . . . . . . . . . . ."
@@ -21,9 +21,25 @@
 }
 
 .about-card {
-  border: 1px black solid;
-  // min-width: 300px;
+  box-shadow: 0 0 0 24px #4A1813;
+  background-color: #FACC96;
+  width: 300px;
+  border-radius: 25px;
+  padding:10px;
 
+  // .content{
+  //   border-radius: 25px ;
+  // }
+    h4 {
+      font-size: 14;
+    }
+    .team {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+      
+    }
 }
 .diane { grid-area: diane; }
 .peng { grid-area: peng; }

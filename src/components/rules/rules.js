@@ -8,8 +8,8 @@ export default function Rules() {
       <div class="about-grid-container">
         <div class="game-rules">
         <h2>RULES</h2>
-        <section>
-          
+          <section className="section-rules">
+            <p></p>
           </section>
         </div>
         {/* <div class="rules-sub"></div> */}

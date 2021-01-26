@@ -13,8 +13,8 @@ import PlayerHub from './components/player-hub/playerHub.js';
 
 function App () {
   return (
-    <>
-      <BrowserRouter>
+    <div className="apps-background">
+    <BrowserRouter>
       <Navbar />
         <Switch>
           <Route exact path='/' component={Landing}/>
@@ -25,7 +25,7 @@ function App () {
         </Switch>
       <Footer className="main-footer" />
       </BrowserRouter>
-    </>
+    </div>
 
   );
 };

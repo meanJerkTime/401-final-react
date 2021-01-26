@@ -2,9 +2,10 @@ footer {
   display:flex;
   justify-content: center;
   align-items: center;
-  // justify-self: flex-end;
-  background-color: #b2bec3;
-  height: 4rem;
+  justify-self: flex-end;
+  background-color:#4D9B42;
+  border-top:18px groove #4D8744;
+  height: 5rem;
  
   position: absolute;
   bottom: 0;

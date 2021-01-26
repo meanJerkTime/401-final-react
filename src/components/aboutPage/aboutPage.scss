@@ -1,51 +1,46 @@
-//TODO: I think that I want to make this a hover instead of a flip
-
 
 .sub {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
-  // grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   .grid-container {
   display: grid;
-  // height: 88vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  // grid-template-columns: repeat(auto-fit, minmax( 1fr));
-  grid-template-rows: 0.20fr 2.4fr .5fr 2.4fr .25fr;
+
+  grid-template-rows: 0.20fr 2.4fr .5fr 2.4fr 1fr;
   
   grid-template-areas:
     ". . . . . . . . . . . . . . . . . . ."
     ". . diane diane diane . peng peng peng . joe joe joe . kory kory kory . ."
     ". . . . . . . . . . . . . . . . . . ."
     ". . . . brendon brendon brendon . chris chris chris . edgar edgar edgar . . . ."
-    ". . . . . . . . . . . . . . . . . . .";
+    // ". . . . . . . . . . . . . . . . . . .";
 }
 
 .about-card {
   box-shadow: 0 0 0 22px #4A1813;
-  background-color: #FACC96;
-  // width: 275px;
+  background-color: #80B0C3;
   border-radius: 25px;
   padding:10px;
 
-  // .content{
-  //   border-radius: 25px ;
-  // }
     h4 {
       font-size: 14;
+      
     }
     .team {
       font-size: 14px;
     }
+
     p {
       font-family: 'Libre Caslon Display', serif;
       font-size: 12px;
       
     }
 }
+
 .diane { grid-area: diane; }
 .peng { grid-area: peng; }
 .joe { grid-area: joe; }
@@ -53,10 +48,7 @@
 .brendon { grid-area: brendon; }
 .chris { grid-area: chris; }
 .edgar { grid-area: edgar; }
-.Nav { 
-  grid-area: Nav; 
-  align-self: start;
-}
+
 
 
 

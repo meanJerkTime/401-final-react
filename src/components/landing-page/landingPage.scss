@@ -1,4 +1,23 @@
-.landingPage {
-    height: 100vh;
-    border: 1px solid;
+.landing-grid-container {
+    display: grid;
+    height:90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ".";
+      
+}
+
+.landing-page {
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 40px;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #80B0C3;
+    box-shadow: 0 0 0 22px #4A1813;
+  
 }

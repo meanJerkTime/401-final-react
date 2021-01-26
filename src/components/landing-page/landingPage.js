@@ -41,7 +41,8 @@ export default function Landing() {
   return (
     <>
     {/* <Navbar/> */}
-      <div>
+      <div className="landing-grid-container">
+      <div className="landing-page">
         <label>
           Username
           <input name="username" onChange={handleChange} />
@@ -53,6 +54,7 @@ export default function Landing() {
         </label>
         <br />
             <NavLink to='/playerHub'><button onClick={handleSubmit}>Login</button></NavLink>
+        </div>
         </div>
       {/* <Footer/> */}
     </>

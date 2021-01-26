@@ -6,6 +6,12 @@ import monsterReducer from './monsterReducer.js';
 import UserReducer from './userReducer.js';
 
 
+
+
+
+
+
+
 const reducer = combineReducers({
   user:UserReducer,
   game:gameTableReducer,

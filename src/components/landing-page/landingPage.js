@@ -1,10 +1,10 @@
 import React from 'react';
-import LoggedOutNavbar from '../header/navbar/loggedOutNavbar.js';
 import Footer from '../footer/footer.js';
 import './landingPage.scss';
 import { useDispatch} from 'react-redux';
 import axios from 'axios';
 import * as actions from '../../store/userReducer.js';
+import LoggedOutNavbar from '../header/navbar/loggedOutNavbar.js';
 
 
 export default function Landing() {
@@ -61,7 +61,7 @@ export default function Landing() {
 
   return (
       <div className="landing-container">
-        <LoggedOutNavbar/>
+        <LoggedOutNavbar />
         <div className="landing-page">
           <label>
             Username

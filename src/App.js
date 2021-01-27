@@ -1,10 +1,7 @@
 import React from 'react';
-
-
 import {useSelector, Provider} from 'react-redux';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from '../src/components/header/navbar/navbar.js'
 import Footer from '../src/components/footer/footer'
 import './app.scss'
 import Landing from './components/landing-page/landingPage.js';
@@ -25,7 +22,6 @@ function App () {
     <Provider store={store}>
     <BrowserRouter>
       <div className="apps-background">
-        <Navbar />
           <Switch>
             <Route exact path='/' component={Landing}/>
             <Route exact path='/game' component={Game}/>

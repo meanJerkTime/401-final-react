@@ -5,8 +5,6 @@ import './aboutPage.scss';
 export default function aboutPage() {
   return (
       <>
-   {/* <Navbar/> */}
-  
     <h2 className="sub">About Page</h2>
     <div class="about-grid-container">
     

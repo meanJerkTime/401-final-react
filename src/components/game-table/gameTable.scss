@@ -9,6 +9,8 @@
     "treasure-cards monster door-cards player-progress"
     ". cards-in-hand . player-progress"
     ". . . .";
+
+  height: 90vh;
 }
 
 .activeCards { grid-area: activeCards; }

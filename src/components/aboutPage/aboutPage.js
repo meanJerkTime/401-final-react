@@ -8,7 +8,7 @@ export default function aboutPage() {
    {/* <Navbar/> */}
   
     <h2 className="sub">About Page</h2>
-    <div class="grid-container">
+    <div class="about-grid-container">
     
         <div class="diane about-card">
             

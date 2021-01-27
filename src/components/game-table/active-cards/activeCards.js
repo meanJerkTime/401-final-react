@@ -9,8 +9,8 @@ export default function ActiveCards() {
   const equippedCards = useSelector( state => state.game)
   return (
     <>
-      <div id="">
-      <ul id='' >
+      <div className="">
+      <ul className="active-cards-grid" >
             {
               equippedCards.activeCards.map(card  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
                     <Card.Img variant="top" src={card.image} />

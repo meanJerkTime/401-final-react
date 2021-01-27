@@ -12,18 +12,15 @@ export default function Monster() {
   useEffect(()=> {
     dispatch(actions.getMonster())
   }, [])
-  // const monster1 = monster[0]
-  // console.log(monster)
+
   return (
     <>
       <div className="monster-container">
       hello
       <ul>
       {
-      monster.monster.slice(0,1).map(item  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
+      monster.monster.slice(0,1).map(item  => <li key={item._id}><Card  className="zoom" style={{ width: '100px' }}>
             <Card.Img variant="top" src={item.image} />
-            <li>{item.id}</li>
-            <li>{item.name}</li>
         </Card></li>
       )
       }

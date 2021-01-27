@@ -11,7 +11,6 @@ export default function CardsInHand() {
 
   const cards = useSelector( state => state.game.cards)
   const dispatch = useDispatch()
-  console.log(cards)
   
   function handleDispatch(card) {
     dispatch(actions.activateCard(card))
@@ -27,7 +26,7 @@ export default function CardsInHand() {
       <div className="cards-in-hand-grid-container">
             <ul className="cards-in-hand-grid">
             {
-              cards.slice(0,5).map(card  => <li onClick={() => handleDispatch(card)}><Card key={card._id} className="zoom" style={{ width: '100px' }}>
+              cards.slice(0,5).map(card  => <li key={card._id} onClick={() => handleDispatch(card)}><Card className="zoom" style={{ width: '100px' }}>
                     <Card.Img variant="top" src={card.image} />
                 </Card></li>
             )

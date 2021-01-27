@@ -13,7 +13,6 @@ export default function reducer(state = initialState, action) {
 
   switch(type) {
     case 'GETCARDSINHAND':
-      console.log('strings')
       return {...state, cards:payload}
     case 'ACTIVATECARD':
       return {...state, activeCards:[...state.activeCards, payload]
@@ -30,7 +29,6 @@ export default function reducer(state = initialState, action) {
 export const getCardsInHand = () => async dispatch => {
   const response = await axios.get(itemsApi);
   const items = response.data;
-  console.log('response')
   dispatch({
     type: 'GETCARDSINHAND',
     payload: items

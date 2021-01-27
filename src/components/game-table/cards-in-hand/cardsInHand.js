@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import * as actions from '../../../store/gameTableReducer.js'
@@ -17,6 +17,10 @@ export default function CardsInHand() {
     dispatch(actions.activateCard(card))
     dispatch(actions.removeCardFromHand(card))
   }
+
+  useEffect(()=> {
+    dispatch(actions.getCardsInHand())
+  }, [])
 
   return (
     <>

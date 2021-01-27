@@ -43,7 +43,7 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
             {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
             <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
         </div>
@@ -62,7 +62,7 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
             {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
             <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
         </div>
@@ -83,7 +83,7 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
             {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
             <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
         </div>
@@ -103,7 +103,7 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
             {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
             <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
         </div>
@@ -150,7 +150,7 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
             {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
             <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
         </div>

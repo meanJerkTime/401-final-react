@@ -9,7 +9,7 @@ import './cardsInHand.scss';
 
 export default function CardsInHand() {
 
-  const cards = useSelector( state => state.game)
+  const cards = useSelector( state => state.game.cards)
   const dispatch = useDispatch()
   console.log(cards)
   
@@ -27,7 +27,7 @@ export default function CardsInHand() {
       <div className="cards-in-hand-grid-container">
             <ul className="cards-in-hand-grid">
             {
-              cards.cards.map(card  => <li onClick={() => handleDispatch(card)}><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
+              cards.map(card  => <li onClick={() => handleDispatch(card)}><Card key={card._id} className="zoom" style={{ width: '100px' }}>
                     <Card.Img variant="top" src={card.image} />
                 </Card></li>
             )

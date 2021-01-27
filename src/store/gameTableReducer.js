@@ -20,7 +20,7 @@ export default function reducer(state = initialState, action) {
       }
     case 'REMOVEFROMHAND':
       //added an id to the objects in order to filter over it TODO: check with logic team on their id naming convention
-      return {...state, cards: [...state.cards.filter(card => card.id !== action.payload.id)]}
+      return {...state, cards: [...state.cards.filter(card => card._id !== action.payload._id)]}
     default:
       return state
   }

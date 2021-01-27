@@ -1,0 +1,13 @@
+.treasure-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px;
+  gap: 5px;
+  border: 1px solid black;
+  height:100%;
+}
+  
+  .deck {
+    border: 1px solid black;
+    width:90%;
+  }

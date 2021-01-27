@@ -1,54 +1,24 @@
-import { NavLink } from 'react-router-dom';
-import {React, useEffect, useState } from 'react';
+import {React} from 'react';
 import './rooms.scss';
-import io from "socket.io-client";
 import { If, Then } from 'react-if';
+import io from 'socket.io-client';
 
 
 
-export default function Landing() {
+export default function Landing(props) {
 
+    let list = props.values;
 
-    let userD = JSON.parse(localStorage.getItem("user login info"));
-
-    const host = 'https://munchkin-game-center.herokuapp.com/games';
-    // const host = 'http://localhost:3333';
     
-    
-    
-    const [roomsList, setRoomsList] = useState([]);
- 
-
-
-    useEffect(() => {
-        const socket = io(host,{
-          query: {
-            user:userD.user.username,
-          }
-        });
-        socket.on('RoomList', (roomList)=>{
-        console.log('<RoomList>',roomList);
-        if(roomList !== undefined){
-            setRoomsList([roomList]);
-        }
-        });
-    }, [userD.user.username]);
-
-    console.log(roomsList);
-
-
 
   return (
     <>
         <ul className='top'>
             
-                <If condition={roomsList !== undefined}>
+                <If condition={list != undefined}>
                     <Then>
-                  { Object.keys(roomsList).map(room =><button>
-                        <NavLink to='/game'>
-                            <li>{room}</li>
-                        </NavLink>
-                    </button> 
+                  { Object.keys(list).map(room =>
+                            <li key={Math.random()}><button onClick={() => props.joinRoom(room)}>{room}</button></li>
                     )
                   }
                     </Then>

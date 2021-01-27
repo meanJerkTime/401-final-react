@@ -20,7 +20,7 @@ export default function PlayerHub() {
 
   const socket = useRef();
 
-  let currentPlayers;
+  
 
   function joinRoom(room) {
     socket.current.emit('Join', room);
@@ -63,10 +63,6 @@ export default function PlayerHub() {
   console.log(roomsList);
   console.log(roomDetail);
 
-  function isEmpty(obj) {
-    return Object.keys(obj).length === 0;
-}
-
   return (
     <>
 
@@ -78,7 +74,7 @@ export default function PlayerHub() {
             <Rooms joinRoom={joinRoom} values={roomsList} className='top'/>
             <CreateRoom createRoom={createRoom} setRoomDetail={setRoomDetail} className='bottom'/>
             {
-              Object.keys(roomDetail).length != 0 &&
+              Object.keys(roomDetail).length !== 0 &&
                 (<div>
                   <ul>
                     {

@@ -14,7 +14,7 @@ export default function Landing(props) {
     <>
         <ul className='top'>
             
-                <If condition={list != undefined}>
+                <If condition={list !== undefined}>
                     <Then>
                   { Object.keys(list).map(room =>
                             <li key={Math.random()}><button onClick={() => props.joinRoom(room)}>{room}</button></li>

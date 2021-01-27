@@ -7,7 +7,6 @@ import Footer from '../footer/footer.js';
 import './playerHub.scss';
 import Rooms from './rooms/rooms.js';
 import CreateRoom from './create-a-room/createRoom.js';
-import GameTable from '../game-table/gameTable.js';
 
 export default function PlayerHub() {
     

@@ -8,6 +8,7 @@ class Player {
     this.id = id // socket.io id or some other id unique to each user
     this.level = level;
     this.cardsInHand = []; // default max of 5
+    this.combatPower = 1
     this.maxCards = 5;
     this.equippedCards = {}; // all weapons/armor equipped to player
     this.sex = null; // should be chosen at game start

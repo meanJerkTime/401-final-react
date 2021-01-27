@@ -60,22 +60,30 @@ export default function Landing() {
 
 
   return (
-    <>
-    <LoggedOutNavbar/>
-    <div>
-      <label>
-        Username
-          <input name="username" onChange={handleChange} />
-      </label>
-      <br />
-      <label>
-        Password
-          <input name="password" onChange={handleChange} />
-      </label>
-      <br />
-      <button onClick={handleSubmit}>Login</button>
-    </div>
-    <Footer/>
-    </>
+      <div className="landing-container">
+        <LoggedOutNavbar/>
+        <div className="landing-page">
+          <label>
+            Username
+            <input name="username" onChange={handleChange} placeholder="Username" />
+          </label>
+          <br />
+          <label>
+            Password
+            <input name="password" onChange={handleChange} placeholder="Password"/>
+          </label>
+          <br />
+          <button onClick={handleSubmit}>Login</button>
+        </div>
+        <Footer/>
+      </div>
+    
   );
 }
+
+
+
+
+
+
+

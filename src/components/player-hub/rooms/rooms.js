@@ -1,7 +1,6 @@
 import {React} from 'react';
 import './rooms.scss';
 import { If, Then } from 'react-if';
-import io from 'socket.io-client';
 
 
 

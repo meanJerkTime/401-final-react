@@ -60,6 +60,7 @@ const LoggedOutNavbar = () => {
               
           </div>
         </div> 
+        <NavLink className="nav-link" to="/about">About</NavLink>
       </div>
     </>
 

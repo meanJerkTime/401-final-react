@@ -2,16 +2,13 @@ import React from 'react';
 import LoggedOutNavbar from '../header/navbar/loggedOutNavbar.js';
 import Footer from '../footer/footer.js';
 import './landingPage.scss';
-import {useSelector, useDispatch} from 'react-redux';
+import { useDispatch} from 'react-redux';
 import axios from 'axios';
-import {Redirect} from 'react-router-dom';
 import * as actions from '../../store/userReducer.js';
 
 
-export default function Landing(props) {
+export default function Landing() {
 
-
-  const user = useSelector( state => state.user);
 
   const dispatch = useDispatch();
 
@@ -82,23 +79,3 @@ export default function Landing(props) {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <div>
-      <h1>Landing</h1>
-      <p><Link to='/playerHub'>View Dashboard</Link></p>
-      <p>Logged in status: {props.user}</p>
-      <button onClick={props.handleLogin}>Log In</button>
-    </div> */}

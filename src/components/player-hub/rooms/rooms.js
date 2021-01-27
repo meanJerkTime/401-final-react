@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import {React, useEffect, useState } from 'react';
 import './rooms.scss';
-import { io } from 'socket.io-client';
+import io from "socket.io-client";
 import { If, Then } from 'react-if';
 
 
@@ -10,9 +10,6 @@ export default function Landing() {
 
 
     let userD = JSON.parse(localStorage.getItem("user login info"));
-    
-    // console.log(userD.token);
-    // console.log(userD.user.username);
 
     const host = 'https://munchkin-game-center.herokuapp.com/games';
     // const host = 'http://localhost:3333';
@@ -20,29 +17,22 @@ export default function Landing() {
     
     
     const [roomsList, setRoomsList] = useState([]);
-
-    
-
-    // const rooms = () => {
-    //     const socket = io(host,{query:`user=${userD.user.username}---${userD.token}`});
-    //     socket.on('RoomList', (roomList)=>{
-    //     setRoomsList(roomList);
-    //     // console.log('<RoomList>',roomList);
-    //     });
-    // }
-
-    
+ 
 
 
     useEffect(() => {
-        const socket = io(host,{query:`user=${userD.user.username}---${userD.token}`});
+        const socket = io(host,{
+          query: {
+            user:userD.user.username,
+          }
+        });
         socket.on('RoomList', (roomList)=>{
         console.log('<RoomList>',roomList);
         if(roomList !== undefined){
             setRoomsList([roomList]);
         }
         });
-    }, []);
+    }, [userD.user.username]);
 
     console.log(roomsList);
 

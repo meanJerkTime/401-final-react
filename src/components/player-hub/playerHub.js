@@ -1,5 +1,5 @@
 import React from 'react';
-import { If, Then, Else } from 'react-if';
+import { If, Then } from 'react-if';
 
 import LoggedInNavbar from '../header/navbar/loggedInNavbar.js';
 import Footer from '../footer/footer.js';

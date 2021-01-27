@@ -1,66 +1,83 @@
 import React from 'react';
-// import Navbar from '../header/navbar/navbar.js';
-// import Footer from '../footer/footer.js';
+import Footer from '../footer/footer.js';
 import './landingPage.scss';
+import { useDispatch} from 'react-redux';
 import axios from 'axios';
+import * as actions from '../../store/userReducer.js';
+import LoggedOutNavbar from '../header/navbar/loggedOutNavbar.js';
+
 
 export default function Landing() {
-  
+
+
+  const dispatch = useDispatch();
+
+  function loginDispatch(user) {
+    dispatch(actions.loginUser(user));
+  }
+
+
   const loginData = Object.freeze({
     username: "",
     password: ""
   });
-  
+
   const [formData, updateFormData] = React.useState(loginData);
 
   const handleChange = (e) => {
     updateFormData({
       ...formData,
-  
-      // Trimming any whitespace
+
       [e.target.name]: e.target.value.trim()
     });
   };
 
-  const handleSubmit = (e) => {
+  
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
     console.log(formData);
-    axios({
-      method:'post',
-      url:'https://munchkin-auth.herokuapp.com/signin',
+    try { 
+      const resp = await axios({
+      method: 'post',
+      url: 'https://munchkin-auth.herokuapp.com/signin',
       auth: {
-        username:formData.username,
-        password:formData.password
+        username: formData.username,
+        password: formData.password
       }
     })
-    .then((response) => {
-      console.log(response);
-      window.location.href = "/playerHub";
+    if(resp.status === 200) {
+      console.log(resp.data);
+      localStorage.setItem("user login info",JSON.stringify(resp.data));
+      loginDispatch(resp.data);
+      window.location.href = '/playerHub';
 
-    }, (error) => {
-      console.log(error);
-    });
-    
+    }
+  } catch (err) {
+      console.log(err);
+  }
   };
 
+
   return (
-    <>
-    {/* <Navbar/> */}
       <div className="landing-container">
-      <div className="landing-page">
-        <label>
-          <input name="username" onChange={handleChange} placeholder="Username" />
-        </label>
-        <br />
-        <label>
-          <input name="password" onChange={handleChange} placeholder="Password"/>
-        </label>
-        <br />
-            <button onClick={handleSubmit}>Login</button>
+        <LoggedOutNavbar />
+        <div className="landing-page">
+          <label>
+            Username
+            <input name="username" onChange={handleChange} placeholder="Username" />
+          </label>
+          <br />
+          <label>
+            Password
+            <input name="password" onChange={handleChange} placeholder="Password"/>
+          </label>
+          <br />
+          <button onClick={handleSubmit}>Login</button>
         </div>
-        </div>
-      {/* <Footer/> */}
-    </>
+        <Footer/>
+      </div>
+    
   );
 }
 

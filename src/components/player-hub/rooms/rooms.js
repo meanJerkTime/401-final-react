@@ -1,39 +1,29 @@
-import { NavLink } from 'react-router-dom';
-import React from 'react';
+import {React} from 'react';
 import './rooms.scss';
+import { If, Then } from 'react-if';
 
 
 
-export default function Landing() {
+export default function Landing(props) {
+
+    let list = props.values;
+
+    
 
   return (
     <>
         <ul className='top'>
-            {
-                rooms.map(room =><button>
-                        <NavLink to='/game'>
-                            <li>{room.roomName}</li>
-                        </NavLink>
-                    </button>
-            )
-            }
+            
+                <If condition={list !== undefined}>
+                    <Then>
+                  { Object.keys(list).map(room =>
+                            <li key={Math.random()}><button onClick={() => props.joinRoom(room)}>{room}</button></li>
+                    )
+                  }
+                    </Then>
+                </If>
+            
         </ul> 
     </>
   );
 }
-
-const rooms = [
-    {
-        roomName: 'Room1',
-        players:'chris,edgar,brendon'
-    },
-    {
-        roomName: 'Room2',
-        players:'Kory, Joe, Diane'
-    },
-    {
-        roomName: 'Room3',
-        players:'Peng'
-    },
-]
-

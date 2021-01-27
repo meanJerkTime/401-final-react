@@ -23,8 +23,8 @@ export default function TreasureCards() {
       <div className="">
       <ul className="treasure-cards-grid" >
             
-              <li className="deck">Treasure Draw Deck</li>
-              <li className="deck">Treasure Discard Deck</li>
+              <li className="treasure-deck">Treasure Draw Deck</li>
+              <li className="treasure-deck">Treasure Discard Deck</li>
             
           </ul> 
       </div>
@@ -33,7 +33,14 @@ export default function TreasureCards() {
 }
 
 
+<<<<<<< HEAD
 // equippedCards.activeCards.map(card  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
 //       <Card.Img variant="top" src={card.image} />
 //   </Card></li>
 // )
+=======
+// {/* equippedCards.activeCards.map(card  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
+//       <Card.Img variant="top" src={card.image} />
+//   </Card></li>
+// ) */}
+>>>>>>> d642f688f1b150441ac5beb5ffe6a5f526e43184

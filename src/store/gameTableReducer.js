@@ -1,4 +1,5 @@
 const initialState = {
+  //TODO: Change state so that we are grabbing from the api
   cards: [
     {
       id:1,
@@ -33,6 +34,7 @@ const initialState = {
   ],
   activeCards: [],
   monster: [
+    // TODO: Hook up to the api
     {
       id:8,
       name: "Monster",

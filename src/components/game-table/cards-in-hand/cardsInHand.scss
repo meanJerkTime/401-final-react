@@ -1,0 +1,29 @@
+// .cards-in-hand-grid-container {
+//   display: grid;
+
+// }
+.cards-in-hand-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid black;
+  // grid-auto-rows:inherit;
+  // gap: 10px;
+  align-items:center;
+}
+ul {
+  list-style: none;
+  img {
+    max-height: 120px;
+    }
+}
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(2.5); 
+    z-index: 1;
+  }

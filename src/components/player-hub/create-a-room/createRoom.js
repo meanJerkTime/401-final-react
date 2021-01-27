@@ -1,10 +1,12 @@
-import React from 'react';
+import {React } from 'react';
 
-export default function CreateRoom() {
+
+export default function CreateRoom(props) {
+
 
   return (
     <>
-        <h1 className='bottom'>Create a Room</h1>
+        <button onClick={props.createRoom}>Create a room</button>
     </>
   );
 }

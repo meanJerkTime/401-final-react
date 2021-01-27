@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import './navbar.scss';
 
-const Navbar = () => {
+const LoggedOutNavbar = () => {
 
   const initialFormData = Object.freeze({
     username: "",
@@ -39,9 +39,8 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-      <NavLink to="/">Home</NavLink>
       <NavLink to='/rules'>Rules</NavLink>
-      
+      <NavLink to="/about">About</NavLink>
         <div className="dropdown">
           <button className="dropbtn">Signup
             <i className="fa fa-caret-down"></i>
@@ -57,11 +56,10 @@ const Navbar = () => {
           <input name="password" onChange={handleChange} />
               </label>
               <br />
-          <button onClick={handleSubmit}>Submit</button>
-              
+          <button onClick={handleSubmit}>Submit</button>  
           </div>
         </div> 
-        <NavLink to="/about">About</NavLink>
+        
       </div>
     </>
 
@@ -72,4 +70,4 @@ const Navbar = () => {
   );
 }
 
-export default Navbar;
+export default LoggedOutNavbar;

@@ -5,6 +5,7 @@
 .cards-in-hand-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  border: 1px solid black;
   // grid-auto-rows:inherit;
   // gap: 10px;
   align-items:center;

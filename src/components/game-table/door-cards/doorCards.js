@@ -12,8 +12,8 @@ export default function DoorCards() {
       <div className="">
       <ul className="door-cards-grid" >
             
-              <li>Door Draw Deck</li>
-              <li>Door Discard Deck</li>
+              <li className="door-deck-draw">Door Draw Deck</li>
+              <li className="door-deck-discard">Door Discard Deck</li>
             
           </ul> 
       </div>

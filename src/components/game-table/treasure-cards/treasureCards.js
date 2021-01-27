@@ -12,8 +12,8 @@ export default function TreasureCards() {
       <div className="">
       <ul className="treasure-cards-grid" >
             
-              <li className="deck">Treasure Draw Deck</li>
-              <li className="deck">Treasure Discard Deck</li>
+              <li className="treasure-deck">Treasure Draw Deck</li>
+              <li className="treasure-deck">Treasure Discard Deck</li>
             
           </ul> 
       </div>

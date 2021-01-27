@@ -10,14 +10,14 @@
     grid-template-rows: 1.5fr 0.5fr;
     gap: 0px 0px;
     grid-template-areas:
-      "monster"
-      "cards";
+    "monster"
+    "cards";
 
-      .monster {
-          border-bottom: 1px dashed; 
-          color:red;
-      }
-      .cards {
-          color:blue;
-      }
-  }
+    .monster {
+        border-bottom: 1px dashed; 
+        color:red;
+    }
+    .cards {
+        color:blue;
+    }
+}

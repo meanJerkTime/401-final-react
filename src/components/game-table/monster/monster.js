@@ -10,22 +10,23 @@ export default function Monster() {
   console.log(monster)
   return (
     <>
-      <div id="">
-      <ul id='' >
-      {
-        monster.monster.map(item  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
-              <Card.Img variant="top" src={item.image} />
-              <li>{item.id}</li>
-              <li>{item.name}</li>
-          </Card></li>
-      )
-      }
-      </ul> 
+      <div className="monster-container">
+      hello
+      {/* <ul id='' >
+      </ul>  */}
       </div>
 
     </>
   );
 }
 
+// {
+//   monster.monster.map(item  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
+//         <Card.Img variant="top" src={item.image} />
+//         <li>{item.id}</li>
+//         <li>{item.name}</li>
+//     </Card></li>
+// )
+// }
 
 

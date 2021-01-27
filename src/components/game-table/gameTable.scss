@@ -1,16 +1,16 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr repeat(2, 0.5fr);
-  grid-template-rows: 0.1fr repeat(2, 1fr) 1.1fr 0.1fr;
+  grid-template-columns: 1fr 1.8fr repeat(2, 0.5fr);
+  grid-template-rows: 0.1fr repeat(2, 1fr) .9fr;
   gap: 0px 0px;
   grid-template-areas:
     ". title . ."
     "activeCards monster door-cards player-progress"
     "treasure-cards monster door-cards player-progress"
-    ". cards-in-hand . player-progress"
-    ". . . .";
+    ". cards-in-hand . player-progress";
+    // ". . . .";
 
-  height: 90vh;
+  height: 100%;
 }
 
 .activeCards { grid-area: activeCards; }
@@ -20,9 +20,12 @@
 .door-cards { grid-area: door-cards; }
 
 .monster { 
+  display:grid;
+  // justify-self: center;
   grid-area: monster; 
+  height:100%;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 
 .cards-in-hand { grid-area: cards-in-hand; }

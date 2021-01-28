@@ -19,7 +19,7 @@ export default function CardsInHand() {
 
   useEffect(()=> {
     dispatch(actions.getCardsInHand())
-  }, [])
+  }, [dispatch])
 
   return (
     <>

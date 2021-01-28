@@ -9,6 +9,8 @@ import Rooms from './rooms/rooms.js';
 import CreateRoom from './create-a-room/createRoom.js';
 import GameTable from './game-table/gameTable.js';
 
+let id = Math.random(Math.ceil() * 100);
+
 export default function PlayerHub() {
     
   let userD = JSON.parse(localStorage.getItem("user login info"));
@@ -37,7 +39,7 @@ export default function PlayerHub() {
   function startGame() {
     setTimeout(()=>{
       socket.current.emit('InitGame', {roomOwner: userD.user.username, players:roomDetail.currentPlayers});
-      let localWinner = undefined;
+      // let localWinner = undefined;
     },15000);
   }
 
@@ -88,7 +90,7 @@ export default function PlayerHub() {
           setRoomsList(roomList);
       }
       });
-  }, [userD.user.username]);
+  }, [userD.user.username, localGameState]);
 
 
 
@@ -121,8 +123,8 @@ export default function PlayerHub() {
                     {
                       
                         roomDetail.currentPlayers.map((player) => 
-                        <div>
-                          <li key={Math.random()}>{player.username}</li>
+                        <div key={id}>
+                          <li>{player.username}</li>
                         </div>
                       )
                     }

@@ -1,7 +1,6 @@
 import React from 'react';
 import './playerProgress.scss';
-
-
+let id = Math.random(Math.ceil() * 100);
 
 function PlayerProgress(props) {
   return (
@@ -9,7 +8,7 @@ function PlayerProgress(props) {
       <div id="">
       {
       props.currentPlayers.map((player) =>
-      <li>{player.username}</li>
+      <li key={id}>{player.username}</li>
       ) 
       }
       </div>

@@ -10,19 +10,23 @@ import './monster.scss';
 export default function Monster(props) {
  
   let userD = JSON.parse(localStorage.getItem("user login info")); // current player
-  let unshuffledDoorDeck = props.localGameState.doorCardDeck;
 
-  console.log(props.localGameState.whosTurn);
+  const [monsterState, setMonsterState] = useState(props.localGameState);
+
+  let unshuffledDoorDeck = monsterState.doorCardDeck;
 
   function fightMonster() {
     
-    combat(props.localGameState[userD.user.username], unshuffledDoorDeck.slice(0,1));
-
-    // update gamestate and pass to next player
-    console.log('after combat function',props.localGameState);
+   let test = combat(monsterState[userD.user.username], unshuffledDoorDeck.slice(0,1));
+    setMonsterState({...monsterState, [userD.user.username] : test[userD.user.username] });
     props.updateState();
     props.nextTurn();
+
   }
+
+  useEffect( ()=>{
+    props.newState(props.localGameState)
+  }, [fightMonster]);
 
   return (
     <>
@@ -39,7 +43,7 @@ export default function Monster(props) {
       }
       <If condition={props.localGameState.whosTurn === userD.user.username}>
         <Then>
-          <button onClick={fightMonster}>Fight monster</button>
+          <button onClick={() => fightMonster()}>Fight monster</button>
         </Then>
       </If>
       

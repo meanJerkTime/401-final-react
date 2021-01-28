@@ -1,0 +1,25 @@
+
+
+.playerHub {
+    height: 75vh;
+    max-width: 95vw;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "top"
+      "bottom";
+
+      .top, .bottom {
+          border: 1px solid;
+      }
+
+      .top {
+        background-image: url('../../assets/images/backgrounds/munchkin_room.jpg');
+        width: 37em;
+
+      }
+  }
+

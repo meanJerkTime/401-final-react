@@ -1,0 +1,33 @@
+.rules-grid-container {
+  display: grid;
+ justify-items: center;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.1fr 1.5fr  0.25fr;
+  height: 85vh;
+  gap: 1em 0em;
+  grid-template-areas:
+    ". sub-head ."
+    ". r-2 ."
+    
+    ". sub-foot .";
+}
+.r-2 { 
+  grid-area: r-2; 
+  display: grid;
+  justify-items:center;
+  width:90%;
+  overflow: scroll;
+  
+}
+.game-rules {
+  // border: 1px solid black;
+    width: 70%;
+    padding-left: 2em;
+    padding-right:2em;
+}
+.sub-head {
+  grid-area: sub-head;
+  font-size: 3em;
+}
+
+.sub-foot { grid-area: sub-foot; }

@@ -43,8 +43,8 @@ export default function CardsInHand(props) {
             <ul className="cards-in-hand-grid">
 
             {
-              player.cardsInHand.map(card => <li onClick={() => {stateUpdater(player,card)}} key={card.name}><Card className="zoom" >
-                    <Card.Img variant="top" src={card.image} style={{ width: '6vw' }} />
+              player.cardsInHand.map(card => <li onClick={() => {stateUpdater(player,card)}} key={card.name}><Card className="zoom" style={{ width: '125px' }}>
+                    <Card.Img variant="top" src={card.image}  />
                 </Card></li>
             )
             }

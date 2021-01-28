@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1.2fr 1.7fr repeat(2, 0.5fr);
-  grid-template-rows: 0.1fr repeat(2, 1fr) .9fr;
+  grid-template-rows: 0.1fr repeat(2, .75fr) .9fr;
   gap: 0px 0px;
   grid-template-areas:
     ". title . ."
@@ -40,6 +40,7 @@
 
 .cards-in-hand { 
   grid-area: cards-in-hand; 
+  min-width: 19vw;
 }
 
 .player-progress { 

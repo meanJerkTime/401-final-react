@@ -71,9 +71,8 @@ export default function Landing() {
           {/* <br /> */}
 
           <label>
-            <input name="password" onChange={handleChange} placeholder="Password"/>
-          </label>
-
+            <input type="password" onChange={handleChange} placeholder="Password" id="myInput"/>
+            </label>
           {/* <br /> */}
           
           <button onClick={handleSubmit}>Login</button>

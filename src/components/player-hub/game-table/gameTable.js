@@ -1,5 +1,5 @@
 import React from 'react';
-import LoggedInNavbar from '../header/navbar/loggedInNavbar.js';
+// import LoggedInNavbar from '../../header/navbar/loggedInNavbar.js';
 import PlayerProgress from './player-progress/playerProgress.js';
 import ActiveCards from './active-cards/activeCards.js';
 import TreasureCards from './treasure-cards/treasureCards.js';
@@ -11,11 +11,12 @@ import './gameTable.scss';
 
 
 
-export default function GamePage() {
+export default function GamePage(props) {
+      console.log(props);   
  
   return (
     <>
-    <LoggedInNavbar/>
+    {/* <LoggedInNavbar/> */}
       <div id="GameTable">
         
         <div className="grid-container">
@@ -34,19 +35,14 @@ export default function GamePage() {
           <div className='cards-in-hand'>
             <CardsInHand />
           </div>
-          {/* <div className='combatArea'>
-            <CombatArea />
-          </div> */}
-
           <div className='playersProgress'>
-            <PlayerProgress />
+            <PlayerProgress currentPlayers={props.roomDetail.currentPlayers} />
           </div>
         </div>
       </div>
-      {/* <Footer/> */}
     </>
   );
-}
+};
 
 
 

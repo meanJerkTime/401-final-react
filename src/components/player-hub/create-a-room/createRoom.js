@@ -1,4 +1,6 @@
-import {React } from 'react';
+import { React } from 'react';
+
+import Button from 'react-bootstrap/Button';
 
 
 export default function CreateRoom(props) {
@@ -6,7 +8,9 @@ export default function CreateRoom(props) {
 
   return (
     <>
-        <button onClick={props.createRoom}>Create a room</button>
+      <div>
+        <Button onClick={props.createRoom} variant="outline-dark" size="lg">Create a room</Button>
+      </div>
     </>
   );
 }

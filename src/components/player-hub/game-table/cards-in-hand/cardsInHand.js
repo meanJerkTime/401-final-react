@@ -1,7 +1,7 @@
 import {React, useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import Card from 'react-bootstrap/Card';
-import * as actions from '../../../store/gameTableReducer.js'
+import * as actions from '../../../../store/gameTableReducer.js'
 
 import './cardsInHand.scss';
 
@@ -19,7 +19,7 @@ export default function CardsInHand() {
 
   useEffect(()=> {
     dispatch(actions.getCardsInHand())
-  }, [])
+  }, [dispatch])
 
   return (
     <>

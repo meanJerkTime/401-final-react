@@ -47,7 +47,7 @@ export default function Landing() {
       }
     })
     if(resp.status === 200) {
-      console.log(resp.data);
+      // console.log(resp.data);
       localStorage.setItem("user login info",JSON.stringify(resp.data));
       loginDispatch(resp.data);
       window.location.href = '/playerHub';
@@ -71,9 +71,8 @@ export default function Landing() {
           {/* <br /> */}
 
           <label>
-            <input name="password" onChange={handleChange} placeholder="Password"/>
-          </label>
-
+            <input type="password" name="password" onChange={handleChange} placeholder="Password" id="myInput"/>
+            </label>
           {/* <br /> */}
           
           <button onClick={handleSubmit}>Login</button>

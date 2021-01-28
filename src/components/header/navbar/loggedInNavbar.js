@@ -14,7 +14,7 @@ const LoggedInNavbar = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink to='/rules'>Rules</NavLink>
         <NavLink to="/about">About</NavLink>
-        <NavLink to="/"><button onClick={clearLocalStorage}>Logout</button></NavLink>
+        <NavLink to="/" onClick={clearLocalStorage}>Logout</NavLink>
       </div> 
     </>
 

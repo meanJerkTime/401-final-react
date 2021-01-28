@@ -86,7 +86,6 @@ export default function PlayerHub() {
                 </div>)
             }
         </div>
-        <button>Log Out</button>
       <Footer/>
         </Then>
       </If>

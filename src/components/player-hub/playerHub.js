@@ -34,8 +34,13 @@ export default function PlayerHub() {
   function createRoom() {
     socket.current.emit("CreateRoom", userD.user.username);
     ;
-  }
-  function updateState() {
+  };
+
+  function getNewState(state){
+    setGameState(state);
+  };
+
+  async function updateState() {
     socket.current.emit("updateState", localGameState);
     console.log('inside update function', localGameState);
     ;
@@ -138,7 +143,7 @@ export default function PlayerHub() {
             }
             {
               Object.keys(localGameState).length > 0 &&
-                <GameTable updateState={updateState} roomDetail={roomDetail} localGameState={localGameState}/>
+                <GameTable newState={getNewState} updateState={updateState} roomDetail={roomDetail} localGameState={localGameState}/>
             }
         </div>
       <Footer/>

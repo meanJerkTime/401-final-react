@@ -62,7 +62,6 @@ function combat(player, monster) {
   // if lose, allow chance to run away ( call runAway() )
     // if successful, end combat and end turn
     // if unsuccessful, player level - 1
-  
   if (player.combatStrength > monster.level) {
     player.level += monster.levelsGiven;
     // player.combatStrength + monster.levelsGiven;
@@ -71,8 +70,7 @@ function combat(player, monster) {
     if (player.runaway) {
       let roll = runAway();
       if(roll) {return}
-    } else { player.level -- };
-    
+    } else { player.level = player.level - 1 };
   };
   if (player.level <= 0) { player.level = 1 };
 };

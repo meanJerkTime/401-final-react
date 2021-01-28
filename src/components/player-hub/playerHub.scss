@@ -1,3 +1,10 @@
+#player-hub {
+  // color:red;
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Libre Caslon Display', serif;
+
+}
 
 
 .playerHub {
@@ -11,15 +18,13 @@
     grid-template-areas:
       "top"
       "bottom";
-
-      .top, .bottom {
-          border: 1px solid;
-      }
-
-      .top {
-        background-image: url('../../assets/images/backgrounds/munchkin_room.jpg');
-        width: 37em;
-
-      }
+    justify-items: center;
+      // .top, .bottom {
+      //     border: 1px solid;
+      // }
+        button {
+          border-radius: 20px
+        }
+      
   }
 

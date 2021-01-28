@@ -39,8 +39,8 @@ export default function CardsInHand(props) {
             <ul className="cards-in-hand-grid">
 
             {
-              player.cardsInHand.map(card => <li onClick={() => {stateUpdater(player,card)}} key={card.name}><Card className="zoom" style={{ width: '100px' }}>
-                    <Card.Img variant="top" src={card.image} />
+              player.cardsInHand.map(card => <li onClick={() => {stateUpdater(player,card)}} key={card.name}><Card className="zoom" style={{ width: '150px' }}>
+                    <Card.Img variant="top" src={card.image}  />
                 </Card></li>
             )
             }

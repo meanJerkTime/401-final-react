@@ -15,8 +15,7 @@
   grid-area: r-2; 
   display: grid;
   justify-items:center;
-  width:90%;
-  overflow: scroll;
+  width:100%;
   
 }
 .game-rules {
@@ -26,8 +25,10 @@
     padding-right:2em;
 }
 .sub-head {
+
   grid-area: sub-head;
-  font-size: 3em;
+  font-size: 4em;
+  padding-top: 10px;
 }
 
 .sub-foot { grid-area: sub-foot; }

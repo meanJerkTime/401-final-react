@@ -17,7 +17,7 @@ export default function TreasureCards() {
   }
 
   let cards = getTreasureCards();
-  console.log(cards);
+  // console.log(cards);
   return (
     <>
       <div className="">

@@ -7,7 +7,7 @@ import { If, Then } from 'react-if';
 export default function Landing(props) {
 
     let list = props.values;
-    console.log(props);
+    // console.log(props);
 
     
 

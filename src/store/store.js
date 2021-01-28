@@ -1,7 +1,6 @@
 import { createStore, combineReducers, applyMiddleware} from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension';
-import axios from 'axios';
-import axiosMiddleware from 'redux-axios-middleware';
+import ReduxThunk from 'redux-thunk';
 
 import gameTableReducer from './gameTableReducer.js';
 import monsterReducer from './monsterReducer.js';
@@ -15,8 +14,8 @@ const reducer = combineReducers({
 })
 
 const store = () => {
-  return createStore(reducer, composeWithDevTools(), applyMiddleware(axiosMiddleware(axios))
-  );
-} 
+  return createStore(reducer, composeWithDevTools(
+    applyMiddleware(ReduxThunk)));
+};
 
 export default store();

@@ -2,7 +2,7 @@ import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import Card from 'react-bootstrap/Card';
 
-import * as actions from '../../../store/treasureReducer.js'
+import * as actions from '../../../../store/treasureReducer.js'
 
 
 import './treasureCards.scss';

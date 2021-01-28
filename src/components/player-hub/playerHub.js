@@ -29,7 +29,7 @@ export default function PlayerHub() {
     socket.current.emit('Join', room);
     
     // console.log(room);
-  }
+  };
 
   function createRoom() {
     socket.current.emit("CreateRoom", userD.user.username);
@@ -44,15 +44,15 @@ export default function PlayerHub() {
     socket.current.emit("updateState", localGameState);
     console.log('inside update function', localGameState);
     ;
-  }
+  };
 
   function startGame() {
     setTimeout(()=>{
       socket.current.emit('InitGame', {roomOwner: userD.user.username, players:roomDetail.currentPlayers});
       // let localWinner = undefined;
     },5000);
-  }
-  
+  };
+
 
  
 

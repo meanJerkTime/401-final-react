@@ -1,35 +1,37 @@
-import {React, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import * as actions from '../../../../store/monsterReducer.js'
+import { combat } from '../../../../game-objects/game-engine.js';
 
 import './monster.scss';
 
-export default function Monster() {
-  const dispatch = useDispatch()
-  const monster = useSelector( state => state.monster)
+export default function Monster(props) {
+ 
+  let userD = JSON.parse(localStorage.getItem("user login info")); // current player
+  let unshuffledDoorDeck = props.localGameState.doorCardDeck;
 
-  useEffect(()=> {
-    dispatch(actions.getMonster())
-  }, [dispatch])
+  combat(props.localGameState[userD.user.username], unshuffledDoorDeck.slice(0,1));
 
   return (
     <>
       <div className="monster-container">
     
       {
-      monster.monster.slice(0,1).map(item  => <li key={item._id}><Card style={{ width: '100px' }}>
-            <Card.Img variant="top" src={item.image} />
-        </Card></li>
-      )
+        unshuffledDoorDeck.slice(0,1).map(item  => (
+          <li key={item._id}>
+            <Card style={{ width: '100px' }}>
+              <Card.Img variant="top" src={item.image} />
+            </Card>
+          </li>
+        ))
       }
       
       </div>
 
     </>
   );
-}
-
+};
 
 
 

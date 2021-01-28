@@ -11,7 +11,13 @@ export default function Monster(props) {
   let userD = JSON.parse(localStorage.getItem("user login info")); // current player
   let unshuffledDoorDeck = props.localGameState.doorCardDeck;
 
-  combat(props.localGameState[userD.user.username], unshuffledDoorDeck.slice(0,1));
+  
+
+  function fightMonster() {
+    
+    // console.log(props.localGameState[userD.user.username]);
+    combat(props.localGameState[userD.user.username], unshuffledDoorDeck.slice(0,1));
+  }
 
   return (
     <>
@@ -26,6 +32,7 @@ export default function Monster(props) {
           </li>
         ))
       }
+      <button onClick={fightMonster}>Fight monster</button>
       
       </div>
 

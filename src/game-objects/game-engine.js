@@ -56,14 +56,17 @@ function equipCards(player, card) {
 };
 
 function combat(player, monster) {
+  console.log(player.level);
+  console.log(monster[0].levelsGiven);
   // compare current player against monster level
   // cannot win on a tie (except warrior)
   // if win, player level + 1
   // if lose, allow chance to run away ( call runAway() )
     // if successful, end combat and end turn
     // if unsuccessful, player level - 1
-  if (player.combatStrength > monster.level) {
-    player.level += monster.levelsGiven;
+  if (player.combatStrength > monster[0].level) {
+    player.level += monster[0].levelsGiven;
+    return console.log('you beat the monster', player);
     // player.combatStrength + monster.levelsGiven;
   };
   if (player.combatStrength <= monster.level) {

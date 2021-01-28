@@ -1,5 +1,5 @@
 import { React, useState, useEffect, useRef } from 'react';
-import { If, Then } from 'react-if';
+import { If, Then, Else } from 'react-if';
 import io from "socket.io-client";
 
 import LoggedInNavbar from '../header/navbar/loggedInNavbar.js';
@@ -85,10 +85,9 @@ export default function PlayerHub() {
         setRoomsList(gameRoomInfo);
         if(gameRoomInfo[userD.user.username]) {
           setRoomDetail(gameRoomInfo[userD.user.username]);
+          console.log(gameRoomInfo)
         }
 
-      // console.log('gameroom info',gameRoomInfo);
-      // console.log('<NewRoomCreated>',gameRoomInfo);
       });
 
       socket.current.on('NewJoin', (payload)=>{
@@ -138,7 +137,13 @@ export default function PlayerHub() {
                       )
                     }
                   </ul>
-                  <button onClick={startGame}>Start Game</button>
+                  
+                    <If condition={roomDetail.roomOwner == userD.user.username}>
+                      <Then>
+                        <button onClick={startGame}>Start Game</button>
+                      </Then>
+                    </If>
+          
                 </div>)
             }
             {

@@ -7,12 +7,13 @@ import { If, Then } from 'react-if';
 export default function Landing(props) {
 
     let list = props.values;
+    console.log(props);
 
     
 
   return (
-    <>
-        <ul className='top'>
+    <div className='top'>
+        <ul className=''>
             
                 <If condition={list !== undefined}>
                     <Then>
@@ -24,6 +25,6 @@ export default function Landing(props) {
                 </If>
             
         </ul> 
-    </>
+    </div>
   );
 }

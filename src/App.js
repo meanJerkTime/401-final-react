@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../src/components/footer/footer'
 import './app.scss'
 import Landing from './components/landing-page/landingPage.js';
-import Game from './components/game-table/gameTable.js';
+import Game from './components/player-hub/game-table/gameTable.js';
 import About from './components/aboutPage/aboutPage.js';
 import Rules from './components/rules/rules.js';
 import PlayerHub from './components/player-hub/playerHub.js';

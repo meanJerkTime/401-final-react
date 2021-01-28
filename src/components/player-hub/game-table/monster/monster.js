@@ -16,8 +16,12 @@ export default function Monster(props) {
 
   function fightMonster() {
     
-    // console.log(props.localGameState[userD.user.username]);
     combat(props.localGameState[userD.user.username], unshuffledDoorDeck.slice(0,1));
+
+    // update gamestate and pass to next player
+    console.log('after combat function',props.localGameState);
+    props.updateState();
+    props.nextTurn();
   }
 
   return (

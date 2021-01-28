@@ -40,10 +40,14 @@ export default function PlayerHub() {
     setGameState(state);
   };
 
+  async function nextTurn(){
+    console.log('nextTurn state',localGameState)
+    // socket.current.emit('nextTurn', localGameState);
+  };
+
   async function updateState() {
     socket.current.emit("updateState", localGameState);
-    console.log('inside update function', localGameState);
-    ;
+    console.log('inside update state function', localGameState);
   };
 
   function startGame() {
@@ -148,7 +152,7 @@ export default function PlayerHub() {
             }
             {
               Object.keys(localGameState).length > 0 &&
-                <GameTable newState={getNewState} updateState={updateState} roomDetail={roomDetail} localGameState={localGameState}/>
+                <GameTable newState={getNewState} nextTurn={nextTurn} updateState={updateState} roomDetail={roomDetail} localGameState={localGameState}/>
             }
         </div>
       <Footer/>

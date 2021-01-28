@@ -2,7 +2,7 @@
   "name": "401-final-react",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://munchkin-game-center.herokuapp.com/games",
+  "proxy": "https://munchkin-game-center.herokuapp.com/games",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
@@ -23,6 +23,7 @@
     "react-tooltip": "^4.2.13",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
     "socket.io-client": "^3.1.0",
     "web-vitals": "^0.2.4"
   },

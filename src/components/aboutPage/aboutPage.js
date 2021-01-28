@@ -22,8 +22,8 @@ export default function aboutPage() {
             {/* image */}
         <div className="social-icons">
             <a href="https://github.com/dianestephani" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
-            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
-            <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
+            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>*/}
+            <a href="https://www.linkedin.com/in/dianestephani/" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> 
         </div>
     </div>
   
@@ -43,9 +43,9 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
-            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
-            <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
+            <a href="https://github.com/PengChen11" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>*/}
+            <a href="https://www.linkedin.com/in/pengchen11/" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> 
         </div>
     </div>
 
@@ -62,9 +62,9 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
-            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
-            <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
+            <a href="https://github.com/penjoe" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a> */}
+            <a href="https://www.linkedin.com/in/joepennock/" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
         </div>
     </div>
 
@@ -83,9 +83,9 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
-            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
-            <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
+            <a href="https://github.com/Dirrbick" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a> */}
+            <a href="https://www.linkedin.com/in/kory-jackson-927363164/" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
         </div>
     </div>
 
@@ -103,9 +103,9 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
-            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
-            <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
+            <a href="https://github.com/BrendonLH" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a> */}
+            <a href="https://www.linkedin.com/in/brendon-hampton-37132899/" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
         </div>
     </div>
 
@@ -150,9 +150,9 @@ export default function aboutPage() {
         </article>
             {/* image */}
         <div className="social-icons">
-            {/* <a href="#" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
-            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>
-            <a href="#" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> */}
+            <a href="https://github.com/Edgar-Romero87" className="fab fa-github" aria-hidden="true" target="_blank" rel="noreferrer"> </a>
+            {/* <a href="#" className="fa fa-twitter" aria-hidden="true" target="_blank" rel="noreferrer"></a>*/}
+            <a href="https://www.linkedin.com/in/edgarromero1987/" className="fa fa-linkedin" aria-hidden="true" target="_blank" rel="noreferrer"> </a> 
         </div>
     </div>
 

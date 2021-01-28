@@ -53,7 +53,7 @@ const LoggedOutNavbar = () => {
               <br />
           <label>
                 Password
-          <input name="password" onChange={handleChange} />
+          <input name="password" type="password" onChange={handleChange} />
               </label>
               <br />
           <button onClick={handleSubmit}>Submit</button>  

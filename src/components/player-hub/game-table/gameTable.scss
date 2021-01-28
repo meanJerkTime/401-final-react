@@ -13,9 +13,10 @@
   height: 100%;
 }
 
-.activeCards { grid-area: activeCards; 
+.activeCards { 
+  grid-area: activeCards; 
   max-height: 30vh;
-  overflow: scroll;}
+}
 
 .treasure-cards { grid-area: treasure-cards; }
 

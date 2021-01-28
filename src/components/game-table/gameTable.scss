@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1.8fr repeat(2, 0.5fr);
+  grid-template-columns: 1.2fr 1.7fr repeat(2, 0.5fr);
   grid-template-rows: 0.1fr repeat(2, 1fr) .9fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -14,7 +14,8 @@
 }
 
 .activeCards { grid-area: activeCards; 
-  max-height: 30vh;}
+  max-height: 30vh;
+  overflow: scroll;}
 
 .treasure-cards { grid-area: treasure-cards; }
 
@@ -37,7 +38,9 @@
   grid-row-end: 4;
 }
 
-.cards-in-hand { grid-area: cards-in-hand; }
+.cards-in-hand { grid-area: cards-in-hand; 
+
+}
 
 .player-progress { grid-area: player-progress; }
 

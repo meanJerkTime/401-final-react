@@ -12,7 +12,7 @@ export default function ActiveCards() {
       <div className="">
       <ul className="active-cards-grid" >
             {
-              equippedCards.activeCards.map(card  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
+              equippedCards.activeCards.map(card  => <li><Card key={Math.random()} className="zoom" style={{ width: '6vw' }}>
                     <Card.Img variant="top" src={card.image} />
                 </Card></li>
             )

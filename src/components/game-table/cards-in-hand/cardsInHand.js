@@ -23,16 +23,16 @@ export default function CardsInHand() {
 
   return (
     <>
-      <div className="cards-in-hand-grid-container">
+    
             <ul className="cards-in-hand-grid">
             {
-              cards.slice(0,5).map(card  => <li key={card._id} onClick={() => handleDispatch(card)}><Card className="zoom" style={{ width: '100px' }}>
+              cards.slice(0,5).map(card  => <li key={card._id} onClick={() => handleDispatch(card)}><Card className="zoom" style={{ width: '7vw' }}>
                     <Card.Img variant="top" src={card.image} />
                 </Card></li>
             )
             }
           </ul> 
-      </div>
+      
     </>
   );
 }

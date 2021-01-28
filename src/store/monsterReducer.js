@@ -21,7 +21,7 @@ export default function reducer(state = monsterState, action) {
 export const getMonster = () => async dispatch => {
   const response = await axios.get(monstersApi);
   const items = response.data;
-  console.log('response')
+  // console.log('response')
   dispatch({
     type: 'GETMONSTER',
     payload: items

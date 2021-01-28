@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {useSelector} from 'react-redux';
 import Card from 'react-bootstrap/Card';
+import { pick } from 'lodash';
 
 import './activeCards.scss';
 
-export default function ActiveCards() {
+let userD = JSON.parse(localStorage.getItem("user login info"));
 
-  const equippedCards = useSelector( state => state.game)
+export default function ActiveCards(props) {
+
+  let equipment = props.localGameState[userD.user.username].cardsEquipped;
+  const [cardsEquipped, setCardsEquipped] = useState([]);
+  // console.log('ActiveCards',props.localGameState);
+
+  
+  // setCardsEquipped([...cardsEquipped, props.localGameState[userD.user.username].cardsEquipped])
+  
+
   return (
     <>
       <div className="">
       <ul className="active-cards-grid" >
             {
-              equippedCards.activeCards.map(card  => <li><Card key={Math.random()} className="zoom" style={{ width: '100px' }}>
+              cardsEquipped.map(card  => <li key={Math.random()}><Card  className="zoom" style={{ width: '100px' }}>
                     <Card.Img variant="top" src={card.image} />
                 </Card></li>
             )

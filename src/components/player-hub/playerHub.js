@@ -1,5 +1,5 @@
 import { React, useState, useEffect, useRef } from 'react';
-import { If, Then } from 'react-if';
+import { If, Then, Else } from 'react-if';
 import io from "socket.io-client";
 
 import LoggedInNavbar from '../header/navbar/loggedInNavbar.js';
@@ -40,10 +40,14 @@ export default function PlayerHub() {
     setGameState(state);
   };
 
+  async function nextTurn(){
+    console.log('nextTurn state',localGameState)
+    socket.current.emit('nextTurn', localGameState);
+  };
+
   async function updateState() {
     socket.current.emit("updateState", localGameState);
-    console.log('inside update function', localGameState);
-    ;
+    console.log('inside update state function', localGameState);
   };
 
   function startGame() {
@@ -68,6 +72,7 @@ export default function PlayerHub() {
       });
 
       socket.current.on('nextPlayer', (gameState)=>{
+        console.log('next player turn', gameState);
         setGameState(gameState);
       });
 
@@ -85,10 +90,9 @@ export default function PlayerHub() {
         setRoomsList(gameRoomInfo);
         if(gameRoomInfo[userD.user.username]) {
           setRoomDetail(gameRoomInfo[userD.user.username]);
+          console.log(gameRoomInfo)
         }
 
-      // console.log('gameroom info',gameRoomInfo);
-      // console.log('<NewRoomCreated>',gameRoomInfo);
       });
 
       socket.current.on('NewJoin', (payload)=>{
@@ -138,12 +142,18 @@ export default function PlayerHub() {
                       )
                     }
                   </ul>
-                  <button onClick={startGame}>Start Game</button>
+                  
+                    <If condition={roomDetail.roomOwner == userD.user.username}>
+                      <Then>
+                        <button onClick={startGame}>Start Game</button>
+                      </Then>
+                    </If>
+          
                 </div>)
             }
             {
               Object.keys(localGameState).length > 0 &&
-                <GameTable newState={getNewState} updateState={updateState} roomDetail={roomDetail} localGameState={localGameState}/>
+                <GameTable newState={getNewState} nextTurn={nextTurn} updateState={updateState} roomDetail={roomDetail} localGameState={localGameState}/>
             }
         </div>
       <Footer/>

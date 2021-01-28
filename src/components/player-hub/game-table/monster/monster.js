@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import * as actions from '../../../../store/monsterReducer.js'
 import { combat } from '../../../../game-objects/game-engine.js';
+import { If, Then, Else } from 'react-if';
 
 import './monster.scss';
 
@@ -11,7 +12,17 @@ export default function Monster(props) {
   let userD = JSON.parse(localStorage.getItem("user login info")); // current player
   let unshuffledDoorDeck = props.localGameState.doorCardDeck;
 
-  combat(props.localGameState[userD.user.username], unshuffledDoorDeck.slice(0,1));
+  console.log(props.localGameState.whosTurn);
+
+  function fightMonster() {
+    
+    combat(props.localGameState[userD.user.username], unshuffledDoorDeck.slice(0,1));
+
+    // update gamestate and pass to next player
+    console.log('after combat function',props.localGameState);
+    props.updateState();
+    props.nextTurn();
+  }
 
   return (
     <>
@@ -26,6 +37,11 @@ export default function Monster(props) {
           </li>
         ))
       }
+      <If condition={props.localGameState.whosTurn === userD.user.username}>
+        <Then>
+          <button onClick={fightMonster}>Fight monster</button>
+        </Then>
+      </If>
       
       </div>
 

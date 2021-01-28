@@ -1,4 +1,5 @@
 import React from 'react';
+import LoggedInNavbar from '../header/navbar/loggedInNavbar.js';
 import PlayerProgress from './player-progress/playerProgress.js';
 import ActiveCards from './active-cards/activeCards.js';
 import TreasureCards from './treasure-cards/treasureCards.js';
@@ -14,7 +15,7 @@ export default function GamePage() {
  
   return (
     <>
-    {/* <Navbar/> */}
+    <LoggedInNavbar/>
       <div id="GameTable">
         
         <div className="grid-container">

@@ -5,15 +5,20 @@
 .cards-in-hand-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
   border: 1px solid black;
   // grid-auto-rows:inherit;
   // gap: 10px;
   align-items:center;
+  height:100%;
 }
 ul {
   list-style: none;
   img {
-    max-height: 120px;
+    // width:7vw;
+    // height:auto;
+
+    // max-height: 120px;
     }
 }
 .zoom {
@@ -22,8 +27,8 @@ ul {
   }
   
   .zoom:hover {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(2.5); 
+    -ms-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(2.0); 
     z-index: 1;
   }

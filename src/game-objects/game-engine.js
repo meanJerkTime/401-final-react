@@ -41,38 +41,39 @@ function equipCards(player, card) {
   // validate type of card and where card is equipped
   // update player combat strength
 
-  let bodyPart = "";
-  if (card.bodyPart) {
-    bodyPart = card.bodyPart;
-    let playerEquip = `${player}.cardsEquipped.${bodyPart}`;
-    player.combatStrength + card.bonus;
-    playerEquip.push(card);
+  // let bodyPart = "";
+  // if (card) {
+  //   bodyPart = card.bodyPart;
+    // let playerEquip = `${player}.cardsEquipped.${bodyPart}`;
+    player.combatStrength += card.bonus;
+    player.cardsEquipped.push(card);
     let cardName = card.cardName;
     let list = player.cardsInHand;
     let handDiscard = list.filter(item => item.cardName !== cardName);
     player.cardsInHand = handDiscard.map(item => { return item });
-    return;
-  } 
+    return player;
+  // } 
 };
 
 function combat(player, monster) {
+  console.log(player.level);
+  console.log(monster[0].levelsGiven);
   // compare current player against monster level
   // cannot win on a tie (except warrior)
   // if win, player level + 1
   // if lose, allow chance to run away ( call runAway() )
     // if successful, end combat and end turn
     // if unsuccessful, player level - 1
-  
-  if (player.combatStrength > monster.level) {
-    player.level + monster.levelsGiven;
-    player.combatStrength + monster.levelsGiven;
+  if (player.combatStrength > monster[0].level) {
+    player.level += monster[0].levelsGiven;
+    return console.log('you beat the monster', player);
+    // player.combatStrength + monster.levelsGiven;
   };
   if (player.combatStrength <= monster.level) {
     if (player.runaway) {
       let roll = runAway();
       if(roll) {return}
-    } else { player.level - 1 };
-    
+    } else { player.level = player.level - 1 };
   };
   if (player.level <= 0) { player.level = 1 };
 };
@@ -106,7 +107,7 @@ function discard(player, card) {
   //
   // this function will work for how our decks are set up but when we add more to the
   // the door deck it would be a good Idea
-  if (card.type === "monster") { gameState.doorCardDiscards.push(card) }
+  // if (card.type === "monster") { gameState.doorCardDiscards.push(card) }
   return;
 };
 

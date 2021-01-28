@@ -12,7 +12,9 @@ import './gameTable.scss';
 
 
 export default function GamePage(props) {
-      console.log(props);   
+
+  let userD = JSON.parse(localStorage.getItem("user login info"));
+
  
   return (
     <>
@@ -20,8 +22,9 @@ export default function GamePage(props) {
       <div id="GameTable">
         
         <div className="grid-container">
+
           <div className='activeCards'>
-            <ActiveCards />
+            <ActiveCards localGameState={props.localGameState} />
           </div>
           <div className='treasure-cards'>
             <TreasureCards />
@@ -30,13 +33,13 @@ export default function GamePage(props) {
             <DoorCards />
           </div>
           <div className='monster'>
-            <Monster />
+            <Monster updateState={props.updateState} newState={props.newState} nextTurn={props.nextTurn} localGameState={props.localGameState} />
           </div>
           <div className='cards-in-hand'>
-            <CardsInHand />
+            <CardsInHand newState={props.newState} updateState={props.updateState} localGameState={props.localGameState} />
           </div>
           <div className='playersProgress'>
-            <PlayerProgress currentPlayers={props.roomDetail.currentPlayers} />
+            <PlayerProgress localGameState={props.localGameState} currentPlayers={props.roomDetail.currentPlayers} />
           </div>
         </div>
       </div>

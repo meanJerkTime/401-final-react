@@ -16,15 +16,14 @@ export default function Monster() {
   return (
     <>
       <div className="monster-container">
-      hello
-      <ul>
+    
       {
-      monster.monster.slice(0,1).map(item  => <li key={item._id}><Card  className="zoom" style={{ width: '100px' }}>
+      monster.monster.slice(0,1).map(item  => <li key={item._id}><Card style={{ width: '100px' }}>
             <Card.Img variant="top" src={item.image} />
         </Card></li>
       )
       }
-      </ul> 
+      
       </div>
 
     </>

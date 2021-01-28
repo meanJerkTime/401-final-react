@@ -42,7 +42,7 @@ export default function PlayerHub() {
 
   async function nextTurn(){
     console.log('nextTurn state',localGameState)
-    // socket.current.emit('nextTurn', localGameState);
+    socket.current.emit('nextTurn', localGameState);
   };
 
   async function updateState() {
@@ -72,6 +72,7 @@ export default function PlayerHub() {
       });
 
       socket.current.on('nextPlayer', (gameState)=>{
+        console.log('next player turn', gameState);
         setGameState(gameState);
       });
 

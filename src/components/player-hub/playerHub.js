@@ -8,7 +8,6 @@ import './playerHub.scss';
 import Rooms from './rooms/rooms.js';
 import CreateRoom from './create-a-room/createRoom.js';
 import GameTable from './game-table/gameTable.js';
-import { LocalLaundryService } from '@material-ui/icons';
 
 export default function PlayerHub() {
     

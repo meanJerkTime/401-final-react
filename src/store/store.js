@@ -5,7 +5,6 @@ import axiosMiddleware from 'redux-axios-middleware';
 
 import gameTableReducer from './gameTableReducer.js';
 import monsterReducer from './monsterReducer.js';
-<<<<<<< HEAD
 import treasureReducer from './treasureReducer.js';
 
 
@@ -13,22 +12,6 @@ const reducer = combineReducers({
   game: gameTableReducer,
   monster: monsterReducer,
   treasure: treasureReducer,
-=======
-import UserReducer from './userReducer.js';
-
-
-
-
-
-
-
-
-const reducer = combineReducers({
-  user:UserReducer,
-  game:gameTableReducer,
-  monster:monsterReducer
-
->>>>>>> d642f688f1b150441ac5beb5ffe6a5f526e43184
 })
 
 const store = () => {

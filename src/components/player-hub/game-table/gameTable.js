@@ -36,7 +36,7 @@ export default function GamePage(props) {
             <Monster />
           </div>
           <div className='cards-in-hand'>
-            <CardsInHand updateState={props.updateState} localGameState={props.localGameState} />
+            <CardsInHand newState={props.newState} updateState={props.updateState} localGameState={props.localGameState} />
           </div>
           <div className='playersProgress'>
             <PlayerProgress currentPlayers={props.roomDetail.currentPlayers} />

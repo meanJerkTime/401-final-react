@@ -11,9 +11,9 @@ import './cardsInHand.scss';
 
 export default function CardsInHand(props) {
 
+  let userD = JSON.parse(localStorage.getItem("user login info"));
   const [playerState, setPlayerState] = useState(props.localGameState);
 
-  let userD = JSON.parse(localStorage.getItem("user login info"));
   // console.log('player state',playerState);
 
   
@@ -33,6 +33,7 @@ export default function CardsInHand(props) {
   };
   
   useEffect( ()=>{
+    props.newState(playerState)
     console.log('myPlayer', myPlayer);
   }, [stateUpdater]);
 

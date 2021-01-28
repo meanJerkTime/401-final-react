@@ -1,6 +1,6 @@
 import React from 'react';
-import {useDispatch, useSelector} from 'react-redux';
-import Card from 'react-bootstrap/Card';
+import {useDispatch} from 'react-redux';
+// import Card from 'react-bootstrap/Card';
 
 import * as actions from '../../../../store/treasureReducer.js'
 
@@ -17,7 +17,7 @@ export default function TreasureCards() {
   }
 
   let cards = getTreasureCards();
-  console.log(cards.data);
+  console.log(cards);
   return (
     <>
       <div className="">

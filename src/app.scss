@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  background-color: #fcead7;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+}
+.apps-background {
+  background-color: #fcead7;
+
+}
+
+// SUB HEADER
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Libre Caslon Display', serif;
+}
+
+li {
+  list-style: none;
+}

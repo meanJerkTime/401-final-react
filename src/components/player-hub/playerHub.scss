@@ -1,0 +1,29 @@
+#player-hub {
+  // color:red;
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Libre Caslon Display', serif;
+
+}
+
+.playerHub {
+    height: 75vh;
+    max-width: 95vw;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "top"
+      "bottom";
+    justify-items: center;
+      // .top, .bottom {
+      //     border: 1px solid;
+      // }
+        button {
+          border-radius: 20px
+        }
+      
+  }
+

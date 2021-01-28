@@ -1,0 +1,50 @@
+
+
+  #about-page-header {
+    font-size: 4em;
+  }
+  .about-grid-container {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-rows: 0.20fr 2.4fr .5fr 2.4fr 1fr;
+  
+  grid-template-areas:
+    ". . . . . . . . . . . . . . . . . . ."
+    ". . diane diane diane . peng peng peng . joe joe joe . kory kory kory . ."
+    ". . . . . . . . . . . . . . . . . . ."
+    ". . . . brendon brendon brendon . chris chris chris . edgar edgar edgar . . . ."
+    // ". . . . . . . . . . . . . . . . . . .";
+}
+
+.about-card {
+  box-shadow: 0 0 0 22px #4A1813;
+  background-color: #A9C4CD;
+  border-radius: 25px;
+  padding:10px;
+
+    h4 {
+      font-size: 14;
+    }
+    .team {
+      font-size: 14px;
+    }
+
+    p {
+      font-family: 'Libre Caslon Display', serif;
+      font-size: 12px;
+    }
+}
+
+.diane { grid-area: diane; }
+.peng { grid-area: peng; }
+.joe { grid-area: joe; }
+.kory { grid-area: kory; }
+.brendon { grid-area: brendon; }
+.chris { grid-area: chris; }
+.edgar { grid-area: edgar; }
+
+
+
+

@@ -7,7 +7,6 @@ function PlayerProgress() {
   return (
     <>
       <div id="">
-          <h1>Player Progress</h1>
       </div>
     </>
   );

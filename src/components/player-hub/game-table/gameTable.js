@@ -10,11 +10,11 @@ import './gameTable.scss';
 
 
 
-export default function GamePage() {
+export default function GamePage(props) {
+    
  
   return (
     <>
-    {/* <Navbar/> */}
       <div id="GameTable">
         
         <div className="grid-container">
@@ -33,16 +33,12 @@ export default function GamePage() {
           <div className='cards-in-hand'>
             <CardsInHand />
           </div>
-          {/* <div className='combatArea'>
-            <CombatArea />
-          </div> */}
 
           <div className='playersProgress'>
             <PlayerProgress />
           </div>
         </div>
       </div>
-      {/* <Footer/> */}
     </>
   );
 }

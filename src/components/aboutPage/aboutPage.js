@@ -1,10 +1,12 @@
 import React from 'react';
 
+import LoggedOutNavbar from '../header/navbar/loggedOutNavbar.js'
 import './aboutPage.scss';
 export default function aboutPage() {
   return (
       <>
-    <h2 className="sub">About Page</h2>
+    <LoggedOutNavbar />
+    <h2 id="about-page-header">About Page</h2>
     <div class="about-grid-container">
     
         <div class="diane about-card">

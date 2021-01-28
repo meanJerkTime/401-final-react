@@ -38,10 +38,12 @@
   grid-row-end: 4;
 }
 
-.cards-in-hand { grid-area: cards-in-hand; 
-
+.cards-in-hand { 
+  grid-area: cards-in-hand; 
 }
 
-.player-progress { grid-area: player-progress; }
+.player-progress { 
+  grid-area: player-progress; 
+}
 
 .title { grid-area: title; }

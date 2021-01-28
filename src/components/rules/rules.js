@@ -1,11 +1,13 @@
 import React from 'react';
 
+import LoggedOutNavbar from '../header/navbar/loggedOutNavbar.js'
 import './rules.scss';
 
 export default function Rules() {
 
   return (
     <>
+    <LoggedOutNavbar />
     <div class="rules-grid-container">
         <div class="r-2">
         <div className="game-rules">
@@ -32,7 +34,7 @@ export default function Rules() {
         </div>
         </div>
 
-        <div class="sub-head">RULES</div>
+        <h2 class="sub-head">RULES</h2>
         <div class="sub-foot"></div>
     </div>
     </>

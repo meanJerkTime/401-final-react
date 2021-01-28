@@ -8,7 +8,7 @@ import './game-table/gameTable.js';
 import Rooms from './rooms/rooms.js';
 import CreateRoom from './create-a-room/createRoom.js';
 import GameTable from './game-table/gameTable.js';
-
+import './playerHub.scss';
 let id = Math.random(Math.ceil() * 100);
 
 export default function PlayerHub() {
@@ -116,7 +116,7 @@ export default function PlayerHub() {
       <If condition={userD.token}>
         <Then>
         <LoggedInNavbar/>
-        <h1>PlayerHub</h1>
+        <h2 id="player-hub">PlayerHub</h2>
         <div className='playerHub'>
           {
             Object.keys(roomDetail).length === 0 &&
@@ -145,7 +145,7 @@ export default function PlayerHub() {
                   
                     <If condition={roomDetail.roomOwner == userD.user.username}>
                       <Then>
-                        <button onClick={startGame}>Start Game</button>
+                        <button id="start-button" onClick={startGame}>Start Game</button>
                       </Then>
                     </If>
           

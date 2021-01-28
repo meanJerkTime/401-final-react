@@ -62,6 +62,7 @@ export default function Landing() {
   return (
     <>
       <LoggedOutNavbar />
+      <h1>Munchkin</h1>
       <div className="landing-container">
         <div className="landing-page">
           <label>

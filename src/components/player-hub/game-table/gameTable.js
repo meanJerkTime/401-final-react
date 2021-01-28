@@ -30,7 +30,7 @@ export default function GamePage(props) {
             <TreasureCards />
           </div>
           <div className='door-cards'>
-            <DoorCards />
+            {/* <DoorCards /> */}
           </div>
           <div className='monster'>
             <Monster updateState={props.updateState} newState={props.newState} nextTurn={props.nextTurn} localGameState={props.localGameState} />

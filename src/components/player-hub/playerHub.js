@@ -25,13 +25,13 @@ export default function PlayerHub() {
 
   function joinRoom(room) {
     socket.current.emit('Join', room);
-    // window.location.href = '/game';
+    
     console.log(room);
   }
 
   function createRoom() {
     socket.current.emit("CreateRoom", userD.user.username);
-    // window.location.href = '/game';
+    ;
   }
 
   function startGame() {
@@ -132,7 +132,7 @@ export default function PlayerHub() {
             }
             {
               Object.keys(localGameState).length > 0 &&
-                <GameTable localGameState={localGameState}/>
+                <GameTable roomDetail={roomDetail} localGameState={localGameState}/>
             }
         </div>
       <Footer/>

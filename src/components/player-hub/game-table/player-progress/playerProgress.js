@@ -3,10 +3,15 @@ import './playerProgress.scss';
 
 
 
-function PlayerProgress() {
+function PlayerProgress(props) {
   return (
     <>
       <div id="">
+      {
+      props.currentPlayers.map((player) =>
+      <li>{player.username}</li>
+      ) 
+      }
       </div>
     </>
   );

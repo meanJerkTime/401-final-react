@@ -3,7 +3,6 @@ import './doorCards.scss';
 
 export default function DoorCards() {
 
-  
   return (
     <>
       <div className="">
@@ -11,7 +10,6 @@ export default function DoorCards() {
             
               <li className="door-deck-draw">Door Draw Deck</li>
               <li className="door-deck-discard">Door Discard Deck</li>
-            
           </ul> 
       </div>
     </>

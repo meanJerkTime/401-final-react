@@ -1,106 +1,50 @@
-//TODO: I think that I want to make this a hover instead of a flip
 
-// section {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-evenly;
-//   align-content: space-between;
-//   flex-wrap: wrap;
-//   margin: 0;
-//   padding: 0;
 
-// .card {
-//   background-color: hotpink;
-//   width: 200px;
-//   height:300px;
 
-// // section {
-// // display: flex;
-// // flex-direction: column;
-// // justify-content: center;
-// //   margin: 0;
-// //   padding: 0;
-// //   // font-family: 'Josefin Sans', sans-serif
-// //   // background-color: #eee
-// //   // a
-// //   // color: #ffffff
-// //   // text-decoration: none
-// // }
+  .about-grid-container {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-rows: 0.20fr 2.4fr .5fr 2.4fr 1fr;
   
-// .about-page {
-//   // border: 1px solid red;
-//   position: absolute;
-//   // border: solid 1px ;
-//   top: 50%;
-//   left: 50%;
-//   height: 200px;
-//   width: 150px;
-//   transform: translate(-50%, -50%);
-//   transform-style: preserve-3d;
-//   perspective: 600px;
-//   transition: .5s;
-//   &:hover .card-front {
+  grid-template-areas:
+    ". . . . . . . . . . . . . . . . . . ."
+    ". . diane diane diane . peng peng peng . joe joe joe . kory kory kory . ."
+    ". . . . . . . . . . . . . . . . . . ."
+    ". . . . brendon brendon brendon . chris chris chris . edgar edgar edgar . . . ."
+    // ". . . . . . . . . . . . . . . . . . .";
+}
 
-//     transform: rotateX(-180deg);
-//   }
-//   &:hover .card-back {
+.about-card {
+  box-shadow: 0 0 0 22px #4A1813;
+  background-color: #A9C4CD;
+  border-radius: 25px;
+  padding:10px;
 
-//     transform: rotateX(0deg);
-//   }
-// }
-
-
-// .card-front {
-
-//   height: 100%;
-//   width: 100%;
-//   // background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg);
-//   background-position: 50% 50%;
-//   background-size: cover;
-//   // position: absolute;
-//   top: 0;
-//   left: 0;
-//   background-color: #000000;
-//   backface-visibility: hidden;
-//   transform: rotateX(0deg);
-//   transition: .5s;
-// }
-
-// .card-back {
-
-//   height: 100%;
-//   width: 100%;
-//   // position: absolute;
-//   top: 0;
-//   left: 0;
-//   background-color: #000000;
-//   backface-visibility: hidden;
-//   transform: rotateX(180deg);
-//   transition: .5s;
-//   color: #ffffff;
-//   text-align: center;
-  
-//     h2 {
-
-//     margin: 60% auto 35% auto;
-//     font-size: 26px;
-//     span {
-//      font-size: 20px;
-//     }
-//     }
-
-//     a{
+    h4 {
+      font-size: 14;
       
-//     height: 20px;
-//     width: 20px;
-//     padding: 5px 5px;
-//     border-radius: 4px;
-//     line-height: 20px;
-//     &:hover {
+    }
+    .team {
+      font-size: 14px;
+    }
 
-//       color: #000000;
-//       background-color: #fff;
-//     }
-//     }
-// }
-// }
+    p {
+      font-family: 'Libre Caslon Display', serif;
+      font-size: 12px;
+      
+    }
+}
+
+.diane { grid-area: diane; }
+.peng { grid-area: peng; }
+.joe { grid-area: joe; }
+.kory { grid-area: kory; }
+.brendon { grid-area: brendon; }
+.chris { grid-area: chris; }
+.edgar { grid-area: edgar; }
+
+
+
+

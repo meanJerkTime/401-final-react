@@ -11,22 +11,26 @@ export default function Monster(props) {
  
   let userD = JSON.parse(localStorage.getItem("user login info")); // current player
 
-  const [monsterState, setMonsterState] = useState(props.localGameState);
+  const [turnFinished, setTurnFinished] = useState(false);
 
-  let unshuffledDoorDeck = monsterState.doorCardDeck;
+  let unshuffledDoorDeck = props.localGameState.doorCardDeck;
 
   function fightMonster() {
     
-   let test = combat(monsterState[userD.user.username], unshuffledDoorDeck.slice(0,1));
-    setMonsterState({...monsterState, [userD.user.username] : test[userD.user.username] });
-    props.updateState();
-    props.nextTurn();
-
+    let updatePlayer = combat(props.localGameState[userD.user.username], unshuffledDoorDeck.slice(0,1));
+    props.newState({...props.localGameState, [userD.user.username] : updatePlayer});
+    setTurnFinished(true);
   }
+  useEffect(() => {
+    if(turnFinished) {
+      props.nextTurn();
+    }
+  }, [turnFinished]);
 
-  useEffect( ()=>{
-    props.newState(props.localGameState)
-  }, [fightMonster]);
+
+  useEffect(() => {
+    console.log('this is whose turn from monster:',props.localGameState.whosTurn);
+  }, [props.localGameState]);
 
   return (
     <>

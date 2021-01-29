@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import LoggedInNavbar from '../../header/navbar/loggedInNavbar.js';
 import PlayerProgress from './player-progress/playerProgress.js';
 import ActiveCards from './active-cards/activeCards.js';
@@ -15,6 +15,9 @@ export default function GamePage(props) {
 
   let userD = JSON.parse(localStorage.getItem("user login info"));
 
+  useEffect(() => {
+    console.log('this is gamestate from game table',props.localGameState);
+  }, [props.localGameState]);
  
   return (
     <>

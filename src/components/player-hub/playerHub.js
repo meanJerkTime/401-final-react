@@ -1,7 +1,6 @@
 import { React, useState, useEffect, useRef } from 'react';
 import { If, Then, Else } from 'react-if';
 import io from "socket.io-client";
-
 import LoggedInNavbar from '../header/navbar/loggedInNavbar.js';
 import Footer from '../footer/footer.js';
 import './game-table/gameTable.js';
@@ -40,14 +39,13 @@ export default function PlayerHub() {
     setGameState(state);
   };
 
-  async function nextTurn(){
-    console.log('nextTurn state',localGameState)
+  function nextTurn(){
+
     socket.current.emit('nextTurn', localGameState);
   };
 
-  async function updateState() {
+  function updateState() {
     socket.current.emit("updateState", localGameState);
-    console.log('inside update state function', localGameState);
   };
 
   function startGame() {
@@ -61,7 +59,7 @@ export default function PlayerHub() {
  
 
   useEffect(() => {
-    console.log('LocalGameState',localGameState);
+    console.log('LocalGameState from playerHub',localGameState);
 
   }, [localGameState]); 
   useEffect(() => {
@@ -72,7 +70,7 @@ export default function PlayerHub() {
       });
 
       socket.current.on('nextPlayer', (gameState)=>{
-        console.log('next player turn', gameState);
+        console.log('next player turn from game center', gameState);
         setGameState(gameState);
       });
 
@@ -83,21 +81,20 @@ export default function PlayerHub() {
 
       socket.current.on('UpdateLocalGameState', (gameState)=> {
         setGameState(gameState);
-        console.log('localGameStateUpdate',localGameState);
       });
 
       socket.current.on('NewRoomCreated', (gameRoomInfo)=>{
         setRoomsList(gameRoomInfo);
         if(gameRoomInfo[userD.user.username]) {
           setRoomDetail(gameRoomInfo[userD.user.username]);
-          console.log(gameRoomInfo)
+          // console.log(gameRoomInfo)
         }
 
       });
 
       socket.current.on('NewJoin', (payload)=>{
 
-        console.log('<NewJoin>',payload);
+        // console.log('<NewJoin>',payload);
         
         setRoomDetail(payload.roomStatus);
       });

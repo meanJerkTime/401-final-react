@@ -10,7 +10,6 @@ export default function ActiveCards(props) {
   
   let userD = JSON.parse(localStorage.getItem("user login info"));
   const [cardsEquipped, setCardsEquipped] = useState(props.localGameState);
-  console.log('ActiveCards',props.localGameState);
 
   let equipment = props.localGameState[userD.user.username].cardsEquipped;
 

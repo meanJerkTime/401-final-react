@@ -12,30 +12,26 @@ import './cardsInHand.scss';
 export default function CardsInHand(props) {
 
   let userD = JSON.parse(localStorage.getItem("user login info"));
-  const [playerState, setPlayerState] = useState(props.localGameState);
+  
+  const [activateCard, setActiveCard] = useState(false);
+
 
   // console.log('player state',playerState);
 
   
-  let myPlayer = pick(playerState, userD.user.username);
-  
-
-  // console.log('myplayer', myPlayer);
+  let myPlayer = pick(props.localGameState, userD.user.username);
+  console.log('myPlayer', myPlayer);
   
   let player = (myPlayer[userD.user.username]);
-  // console.log('player',player);
+  
 
   let stateUpdater = (cardsInHand, card) => {
     equipCards(cardsInHand, card);
-    setPlayerState({...playerState, [userD.user.username] : myPlayer[userD.user.username]}) // [userD.user.username] : myPlayer[userD.user.username]
+    props.newState({...props.localGameState, [userD.user.username] : myPlayer[userD.user.username]}) // [userD.user.username] : myPlayer[userD.user.username]
     // console.log('inside state updater',playerState);
      props.updateState();
   };
   
-  useEffect( ()=>{
-    props.newState(playerState)
-    console.log('myPlayer', myPlayer);
-  }, [stateUpdater]);
 
   return (
     <>

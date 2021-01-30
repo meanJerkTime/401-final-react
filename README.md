@@ -10,7 +10,7 @@
 
 ## Web Application
 
-This was our attempt to program an online version of Munchkin, the classic tabletop game by Steve Jackson Games.
+This was our attempt to program an online version of Munchkin, the classic tabletop game by Steve Jackson Games. Fight monsters, collect treasure, and be the first player to reach level 10!
 
 ---------------------------------
 
@@ -26,7 +26,7 @@ Microsoft Visual Studio
 
 ## Data Flow 
 
-![Data Flow Diagram]()
+Data flow diagram [here](https://miro.com/app/board/o9J_lYMYMSI=/).
 
 ---------------------------
 

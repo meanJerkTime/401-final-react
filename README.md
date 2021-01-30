@@ -20,7 +20,8 @@ Microsoft Visual Studio
 
 - React
 - Redux
-- Amazon Web Services
+- Netlify
+- Material UI
 
 ---------------------------------
 

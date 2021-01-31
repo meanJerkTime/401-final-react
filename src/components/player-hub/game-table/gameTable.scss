@@ -25,7 +25,6 @@
   grid-column-start: 3;
   grid-row-start: 2;
   grid-row-end: 4;
-  // gap:10px, 10px;
   height:100%;
 }
 
@@ -35,8 +34,8 @@
   align-content: center;
   grid-area: monster; 
   height:100%;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  // grid-row-start: 2;
+  // grid-row-end: 4;
 }
 
 .cards-in-hand { 
@@ -44,8 +43,10 @@
   min-width: 19vw;
 }
 
-.player-progress { 
-  grid-area: player-progress; 
+.players-progress { 
+  grid-area: players-progress; 
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 .title { grid-area: title; }

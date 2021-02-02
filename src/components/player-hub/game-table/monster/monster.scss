@@ -1,10 +1,24 @@
 .monster-container {
+  display: grid;
   max-height:60vh;
+  // width:100vw;
 
+  #monster-card {
+    // width:24vw;
+    justify-self: center;
     img {
       
       width:14vw;
+      min-width: 150px;
       height: auto;
       align-self:center;
+    }
+  }
+  
+  #fight-monster-button {
+    margin-top: 1em;
+    width:10vw; 
+    min-width: 150px;
+      justify-self:center;
     }
 }

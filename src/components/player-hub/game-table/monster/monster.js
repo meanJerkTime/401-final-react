@@ -38,8 +38,8 @@ export default function Monster(props) {
     
       {
         unshuffledDoorDeck.slice(0,1).map(item  => (
-          <li key={item._id}>
-            <Card style={{ width: '100px' }}>
+          <li id="monster-card" key={item._id}>
+            <Card >
               <Card.Img variant="top" src={item.image} />
             </Card>
           </li>
@@ -47,7 +47,7 @@ export default function Monster(props) {
       }
       <If condition={props.localGameState.whosTurn === userD.user.username}>
         <Then>
-          <button onClick={() => fightMonster()}>Fight monster</button>
+          <button id="fight-monster-button" onClick={() => fightMonster()}>Fight monster</button>
         </Then>
       </If>
       

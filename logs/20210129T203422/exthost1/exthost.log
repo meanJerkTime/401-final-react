@@ -1,0 +1,55 @@
+[2021-01-29 20:34:25.977] [exthost] [info] extension host started
+[2021-01-29 20:34:26.090] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-01-29 20:34:26.090] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-01-29 20:34:26.128] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-01-29 20:34:26.128] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/debug-auto-launch/dist/extension
+[2021-01-29 20:34:26.133] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2021-01-29 20:34:26.133] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-01-29 20:34:26.171] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-01-29 20:34:26.171] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/main
+[2021-01-29 20:34:26.254] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2021-01-29 20:34:26.254] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-01-29 20:34:26.259] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2021-01-29 20:34:26.259] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/search-result/dist/extension.js
+[2021-01-29 20:34:26.261] [exthost] [info] ExtensionService#_doActivateExtension alefragnani.project-manager {"startup":true,"extensionId":{"value":"alefragnani.project-manager","_lower":"alefragnani.project-manager"},"activationEvent":"*"}
+[2021-01-29 20:34:26.261] [exthost] [info] ExtensionService#loadCommonJSModule file:///Users/dianestephani/.vscode/extensions/alefragnani.project-manager-12.0.1/dist/extension
+[2021-01-29 20:34:26.275] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2 {"startup":true,"extensionId":{"value":"CoenraadS.bracket-pair-colorizer-2","_lower":"coenraads.bracket-pair-colorizer-2"},"activationEvent":"*"}
+[2021-01-29 20:34:26.275] [exthost] [info] ExtensionService#loadCommonJSModule file:///Users/dianestephani/.vscode/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension
+[2021-01-29 20:34:26.428] [exthost] [info] ExtensionService#_doActivateExtension Gruntfuggly.todo-tree {"startup":true,"extensionId":{"value":"Gruntfuggly.todo-tree","_lower":"gruntfuggly.todo-tree"},"activationEvent":"*"}
+[2021-01-29 20:34:26.428] [exthost] [info] ExtensionService#loadCommonJSModule file:///Users/dianestephani/.vscode/extensions/gruntfuggly.todo-tree-0.0.196/dist/extension
+[2021-01-29 20:34:26.506] [exthost] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"extensionId":{"value":"HookyQR.beautify","_lower":"hookyqr.beautify"},"activationEvent":"*"}
+[2021-01-29 20:34:26.506] [exthost] [info] ExtensionService#loadCommonJSModule file:///Users/dianestephani/.vscode/extensions/hookyqr.beautify-1.5.0/extension
+[2021-01-29 20:34:26.582] [exthost] [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare {"startup":true,"extensionId":{"value":"ms-vsliveshare.vsliveshare","_lower":"ms-vsliveshare.vsliveshare"},"activationEvent":"*"}
+[2021-01-29 20:34:26.582] [exthost] [info] ExtensionService#loadCommonJSModule file:///Users/dianestephani/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.3577/out/prod/extension-prod
+[2021-01-29 20:34:27.436] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2021-01-29 20:34:27.436] [exthost] [info] ExtensionService#loadCommonJSModule file:///Users/dianestephani/.vscode/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2021-01-29 20:34:28.348] [exthost] [info] ExtensionService#_doActivateExtension Tino.simple-rest-client {"startup":true,"extensionId":{"value":"Tino.simple-rest-client","_lower":"tino.simple-rest-client"},"activationEvent":"*"}
+[2021-01-29 20:34:28.348] [exthost] [info] ExtensionService#loadCommonJSModule file:///Users/dianestephani/.vscode/extensions/tino.simple-rest-client-1.4.2/out/extension.js
+[2021-01-29 20:34:29.191] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-01-29 20:34:29.191] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-01-29 20:34:29.610] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":false,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-01-29 20:34:29.610] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/github/dist/extension.js
+[2021-01-29 20:34:29.860] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:jsonc"}
+[2021-01-29 20:34:29.860] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/configuration-editing/dist/configurationEditingMain
+[2021-01-29 20:34:29.868] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2021-01-29 20:34:29.868] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/json-language-features/client/dist/node/jsonClientMain
+[2021-01-29 20:34:29.944] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2021-01-29 20:34:29.944] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/typescript-language-features/dist/extension
+[2021-01-29 20:34:30.172] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-01-29 20:34:30.172] [exthost] [info] ExtensionService#loadCommonJSModule file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/github-authentication/dist/extension.js
+[2021-01-29 20:34:32.119] [exthost] [error] Activating extension ms-vsliveshare.vsliveshare failed due to an error:
+[2021-01-29 20:34:32.119] [exthost] [error] Error: Agent terminated with exit code: 0 and signal null: A fatal error occurred. The required library libhostfxr.dylib could not be found.
+If this is a self-contained application, that library should exist in [/Users/dianestephani/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.3577/dotnet_modules/].
+If this is a framework-dependent application, install the runtime in the global location [/usr/local/share/dotnet] or use the DOTNET_ROOT environment variable to specify the runtime location or register the runtime location in [/etc/dotnet/install_location].
+
+The .NET Core runtime can be found at:
+  - https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=osx.10.15-x64
+	at ChildProcess.<anonymous> (/Users/dianestephani/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.3577/out/prod/extension-prod.js:185904:32)
+	at ChildProcess.emit (events.js:228:7)
+	at maybeClose (internal/child_process.js:1021:16)
+	at Socket.<anonymous> (internal/child_process.js:430:11)
+	at Socket.emit (events.js:223:5)
+	at Pipe.<anonymous> (net.js:664:12)
+[2021-01-29 20:34:32.120] [exthost] [info] eager extensions activated
+[2021-01-29 20:34:32.135] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":false,"extensionId":{"value":"dbaeumer.vscode-eslint","_lower":"dbaeumer.vscode-eslint"},"activationEvent":"onStartupFinished"}
+[2021-01-29 20:34:32.136] [exthost] [info] ExtensionService#loadCommonJSModule file:///Users/dianestephani/.vscode/extensions/dbaeumer.vscode-eslint-2.1.14/client/out/extension

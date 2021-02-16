@@ -7,7 +7,7 @@ function PlayerProgress(props) {
   
   return (
     <>
-      <div id="">
+      <div id="player-progress">
       {
       props.currentPlayers.map((player) =>
       <li key={id}>{player.username}</li>

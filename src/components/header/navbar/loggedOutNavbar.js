@@ -39,6 +39,7 @@ const LoggedOutNavbar = () => {
   return (
     <>
       <div className="navbar">
+      <NavLink to="/">Home</NavLink>
       <NavLink to='/rules'>Rules</NavLink>
       <NavLink to="/about">About</NavLink>
         <div className="dropdown">
@@ -47,16 +48,14 @@ const LoggedOutNavbar = () => {
           </button>
           <div className="dropdown-content">
           <label>
-              Username
-          <input name="username" onChange={handleChange} />
-              </label>
+            <input name="username" onChange={handleChange} placeholder= "Username" />
+          </label>
               <br />
           <label>
-                Password
-          <input name="password" type="password" onChange={handleChange} />
-              </label>
+            <input name="password" type="password" onChange={handleChange} placeholder="Password"/>
+          </label>
               <br />
-          <button onClick={handleSubmit}>Submit</button>  
+            <button onClick={handleSubmit}>Submit</button>  
           </div>
         </div> 
         

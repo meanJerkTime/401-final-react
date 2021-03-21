@@ -1,0 +1,5 @@
+[2021-01-29 20:34:26.582] [sharedprocess] [info] main {"machineId":"674c9f460839cfe3827e65e6fd2f25a50ce58a3795746f0936e33f73141e22f0","windowId":2}
+[2021-01-29 20:34:26.724] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/Users/dianestephani/Documents/Code-Fellows/401/labs/401-final-react/User/snippets'
+[2021-01-29 20:34:27.249] [sharedprocess] [info] Deleted from disk msjsdiag.debugger-for-chrome /Users/dianestephani/.vscode/extensions/msjsdiag.debugger-for-chrome-4.12.11
+[2021-01-29 20:34:27.273] [sharedprocess] [info] Deleted from disk ms-vsliveshare.vsliveshare /Users/dianestephani/.vscode/extensions/ms-vsliveshare.vsliveshare-1.0.3484
+[2021-01-29 20:35:06.627] [sharedprocess] [info] Starting to clean up unused language packs.
